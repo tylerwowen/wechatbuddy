@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+
+@interface AppDelegate () <PBPebbleCentralDelegate>
+
+@property PBWatch *watch;
 
 @end
 
@@ -16,7 +19,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  // Override point for customization after application launch.
+  // Get Pebble events by setting this object as the delegate
+  [[PBPebbleCentral defaultCentral] setDelegate:self];
+  
+  // Set watch property to the object representing the last connected watch
+  self.watch = [[PBPebbleCentral defaultCentral] lastConnectedWatch];
+  
   return YES;
 }
 
@@ -40,6 +48,10 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (PBWatch *)getConnectedWatch {
+  return self.watch;
 }
 
 @end
