@@ -7,100 +7,317 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024C103848113AEF76AC5A742AF80B75 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 156052C7DD6A7BFF6BBC72CE95D9120B /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E615E9CA3F7C983E82758A5B9F64D21 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E470C26BA0E2750C086043E4383D9436 /* Pods-dummy.m */; };
-		8E5B36A0C49FFEF344D1F27BCFD02087 /* Pods-WeChatBuddyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA24F110EE57CEC58A3A1455A5D6B345 /* Pods-WeChatBuddyTests-dummy.m */; };
-		92DC8D970381FD88B9736E563690927F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D7F375472A9B2E8CE098CB66B1D59B /* Foundation.framework */; };
-		98E55E8D3CA662C49E3F8F55DBC24C49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D7F375472A9B2E8CE098CB66B1D59B /* Foundation.framework */; };
-		A9395FA8F0A55602E7109337D6EAF537 /* Pods-WeChatBuddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 511E74E0BD9A86FDB66A4DF72D756948 /* Pods-WeChatBuddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABB5A6A78BE878ECF668EDC61B1CECE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35D7F375472A9B2E8CE098CB66B1D59B /* Foundation.framework */; };
-		D36B169E614DF196E5E63D0589C5697A /* Pods-WeChatBuddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9411C78FFB4018655C9E899F2FFCAA4 /* Pods-WeChatBuddy-dummy.m */; };
-		E03FEEE61E6EE3E1882BE9CDACEAA27A /* Pods-WeChatBuddyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E01FED43371E14A84C6F201CE279DC5C /* Pods-WeChatBuddyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01128BA65DFD5F5A85C314C31A581F03 /* OCMInvocationExpectation.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E2E9070C5AC178048AC0CCB2C0C1B3 /* OCMInvocationExpectation.h */; };
+		043FECC6649F534BBC384FE275D410DF /* OCMVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D0515C743C0E97E2F14F007C718AE5 /* OCMVerifier.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0612C01861F9D4B5A4421C225215E5EE /* OCMInvocationStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CF273CF08D18C685D20FF04BD17DD40 /* OCMInvocationStub.h */; };
+		07277E2F208B1E075F4DC6B5A44E26A4 /* Pods-WeChatBuddyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A46856006FF200A04D5F5D6B570D833C /* Pods-WeChatBuddyTests-dummy.m */; };
+		08B857E0D271D351CD78643ACB3A93D3 /* OCMPassByRefSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0317451A7229EFCD3D811D2E5E8A25 /* OCMPassByRefSetter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0912C5340AF08F263BE2AD65C4F066CA /* NSInvocation+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D1BE569152FAE45FFF828126C35E9E70 /* NSInvocation+OCMAdditions.h */; };
+		0DA3D512B9BBF4ACD2646C11503431E1 /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A8653F9255CCAC8730A2B348A7720D /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0E69A4DCA23FCD4DD8A3F068765102FB /* OCMExpectationRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADA0DEBE7E9673679012227562D23F8 /* OCMExpectationRecorder.h */; };
+		15E8DAA35E060C5CBD82590BBC36858D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DB71FBF87526E49F5231754D0357A6 /* Foundation.framework */; };
+		1D87C34F9A2C43B635C152AB5A11F2F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DB71FBF87526E49F5231754D0357A6 /* Foundation.framework */; };
+		22551F60B6F2F4A9A6D0D6F97EC5B805 /* OCMReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1803D0D5B9C65DDF7C6AA786F2A355A0 /* OCMReturnValueProvider.h */; };
+		2920EC572D60E228D79AA27F8AA7938D /* OCClassMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A4378744339081DA9590D591ABADEC1 /* OCClassMockObject.h */; };
+		2C2A482BAFF716A130EDD3F5EE3F637F /* OCMArg.m in Sources */ = {isa = PBXBuildFile; fileRef = 463578F94DF7356344BF16AB87A9A10E /* OCMArg.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2C3573985BE899FD5F3D85C334775394 /* OCMLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9577C19F10F5CD9DDDAEA395A553D7DB /* OCMLocation.h */; };
+		33366B715B180D1D8754D023C17F7762 /* OCMConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B3302E6CF3D5CC5B3D30B72CCF1A77 /* OCMConstraint.h */; };
+		3404D72391228D370F1F242D81B164B4 /* OCMBlockCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 72505DDB25C6B62B0A48CC1D73050835 /* OCMBlockCaller.h */; };
+		3606B62FA3DCCA2DA0C79324BC5BC6E7 /* OCMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CB713DE1EB5DEE4EE8D95D8BC0AD3 /* OCMLocation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		36C5E6771B91CF1500D633942D12835D /* NSObject+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9169FD66B215EFA9B7E78B5A677AD2FC /* NSObject+OCMAdditions.h */; };
+		3763DFD9839F11B3E303B96E3E7C326D /* OCMRealObjectForwarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 53446228A5C45E5242D4DE2457EEBDFD /* OCMRealObjectForwarder.h */; };
+		3B94D6780FA8225BA6A177BEC377C8E6 /* OCMInvocationExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE56323B289ED8AD758D36C8C958A2F /* OCMInvocationExpectation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		480F50041B15EE0D7AFC9646E4B78DD4 /* OCMInvocationStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E23EE3F73877E868A9763823C305821 /* OCMInvocationStub.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4AA0A082868BF3192C5E0FCA0ECFC7F7 /* OCMReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F58638FE987BA5C6DDB250C79B8ECF /* OCMReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		52675D68F00BD36E51CD4CBB1976069A /* OCObserverMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 196615221222C2AC89B94DD730F4036B /* OCObserverMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FF363E44C409998B4EE7EC5E0AC310C /* NSMethodSignature+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA07A13BFAB257159E2641D2BDEFDABA /* NSMethodSignature+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		610B73BC15C8F3E0A6A717A722DF82D6 /* OCMFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B7C167ED0CFA64AD49420CCD0550FF /* OCMFunctions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6539D6B1F670DD27C189049B38C50908 /* OCMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2BBB0E42BD4068ECBB18AE5C08AE1F /* OCMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6A2587DB25BEB625C3820A823BD7BBD1 /* OCProtocolMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F4177E8C23FF0E2197C9385FFB5A4B /* OCProtocolMockObject.h */; };
+		745EAE4E52636EDAA4521ACF289B4AC2 /* OCPartialMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D339CF52E9DFD64B860403AFAC5563 /* OCPartialMockObject.h */; };
+		74821FB4F57D1AA8B4B117153B154D63 /* OCMBoxedReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F98D32AADBA3E918EBBE03B46AE87 /* OCMBoxedReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7591FEBF31FC0F5F2E07164D7370DDA1 /* OCMBlockCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AFC6FD18FE85009FFFC3D787F70A98 /* OCMBlockCaller.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		791973A29086BAD35DCBE97C80C667E5 /* OCMIndirectReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8B50F74275316506E2A9361525BF1C /* OCMIndirectReturnValueProvider.h */; };
+		83271BAB5EBD89A7CFA7A58ADD2DF30F /* OCMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CEBB6C05F332AE2AA300E0A729EDCE6 /* OCMock.h */; };
+		893B7EC2BA92038B1798DC4D8015B301 /* NSValue+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A5AEC3AA89B513B23478087D5E3E2 /* NSValue+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8B9AF1D177472A31BCCEFBDC009E1B06 /* NSObject+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB7FCA5060F7911D269C6786AC4EAFE /* NSObject+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		923380A026F4BD23C187BD3409693075 /* OCMRealObjectForwarder.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858AF1EEED7CEAD09806FFC2F5CD49 /* OCMRealObjectForwarder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		96B18C4D4A67EF0685ABD998B0EAA42F /* OCMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 179D7B37DCE89B3C0EE72DD68E34A3C4 /* OCMRecorder.h */; };
+		970CBE3CB34924517C032C5D7408F88A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DB71FBF87526E49F5231754D0357A6 /* Foundation.framework */; };
+		9937668E2062B3A4E9C533B9DD673089 /* OCMMacroState.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BE02D8FA49B28BFB7B4D33A59CDC6D /* OCMMacroState.h */; };
+		99C1C423A9701EC2AA1894F41A43ADC3 /* OCMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B5A37331B4EBC373ED45878B3A3DB2 /* OCMockObject.h */; };
+		9B41B9132B2CA633C4FE63512FCC9E17 /* NSNotificationCenter+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 26CA24D73974572811820891BA80859A /* NSNotificationCenter+OCMAdditions.h */; };
+		A1EEBF27803D9700F9DB0381EE5210B5 /* OCMFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = DF680213D2C6B946082B81FA5A6AD26B /* OCMFunctions.h */; };
+		A45A755E8576B43D3813E8A997AF353A /* OCMObserverRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 75AF3EA96DF67B4222E76854F5AA03EF /* OCMObserverRecorder.h */; };
+		A942B2F0F32A6E6FD64387CC48B068E4 /* OCMConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 082BCB74395FBD21FBA38B3EC946519C /* OCMConstraint.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AA0F79677BA0B0FACB46119BDB166157 /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABAE3D92CAEC084073AB626487A31EC /* OCClassMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AA6E5DFBBF83759255F8A4E793F1CD11 /* NSNotificationCenter+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4BE211ECFF03E9E08B230F368E528 /* NSNotificationCenter+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B312A94A657AD6BA6752D61E4CDF12D7 /* OCMStubRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B39CF59690F5641713D81BE96F5CBA /* OCMStubRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B3F4E0205059D5B83A9531296B38A748 /* OCMExceptionReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7F4E4AF6CE6D8415220621B58A55F /* OCMExceptionReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B5DC7F963F08D37957765F2789C15178 /* OCMNotificationPoster.h in Headers */ = {isa = PBXBuildFile; fileRef = 986367FD1DA7178DE78169CD3EA320E8 /* OCMNotificationPoster.h */; };
+		B60C05D9BB068764675EE14B0B14F744 /* OCMPassByRefSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8015BB56990A874BD40658833233ACE /* OCMPassByRefSetter.h */; };
+		B810DCAB6CB885D70B9A509C222DA2C5 /* OCMVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EC1A463C33FD9D789AC72094C571C1 /* OCMVerifier.h */; };
+		B922B71EF6DDFAD870DD64AF355CED6F /* OCMExceptionReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 21C038873F79DEF3690F7F41E7B5ECF8 /* OCMExceptionReturnValueProvider.h */; };
+		CF78F10BA4EFF8F3006D434D1377BB2F /* OCMNotificationPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C4AFC4C6665E8F0DA774B7338670D /* OCMNotificationPoster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D48B03D0439BB8181FF32001021CD7B8 /* OCMMacroState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8421BCA529D3EBC13F9D025F8BC2704B /* OCMMacroState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6CACFFA62545A5323C9689759F72DCD /* OCMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 668C9EA76474ED299E0FECE0291CD3CB /* OCMock-dummy.m */; };
+		D74CFB534C69B95964B6B2BD6AA72555 /* OCProtocolMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A217BB5BA6F1D4172AD8CAA941D2D /* OCProtocolMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D8EDD1FBEB7C48F2CF3ACD5354A431BA /* OCMInvocationMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC324EB2233ED3040519425A7FF25BC /* OCMInvocationMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D9DBBCB1AED667DA977D8C995C4D413C /* Pods-WeChatBuddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5786D15CA50BB76DA31B6044EB0D20E /* Pods-WeChatBuddy-dummy.m */; };
+		DB2313EE7C20D0DD233BAEDBE3E9AD48 /* OCMInvocationMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC0CB82E7A076F0D075AE8CD9439292 /* OCMInvocationMatcher.h */; };
+		E2B48A0F17C90B7FB7462567C010A46C /* NSValue+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDA46189CE5EADB9AE5C76EA4A6FDBB /* NSValue+OCMAdditions.h */; };
+		EA86DFBE245F7DBEE7F4974754EEC588 /* OCMArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 55797EACF575C79F9D3AFC59F61F7B05 /* OCMArg.h */; };
+		EAF33A6D76086FD30868D8C7A2BA09DB /* OCMIndirectReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 58793831CEBCA3E2BE65DA272BF622AE /* OCMIndirectReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDF019FFE1DECB1E8BBF788CA2F79D75 /* OCMBoxedReturnValueProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE621DD6833AB676C3AF341C04CBA0E /* OCMBoxedReturnValueProvider.h */; };
+		EDF21F37357A28B39D87497297FDE4E4 /* OCMObserverRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF7ACAF7373BC786334DFD30AB85904 /* OCMObserverRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F05B5629F22B19301F71FDED52ED4EC1 /* OCMStubRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9F02D08BFB9647253423504EF66DC3 /* OCMStubRecorder.h */; };
+		F0E8E10B1BE104B377A780D34856775E /* OCMRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3E4034A5D3BBB8ADCF2B0FE9151F9B /* OCMRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F2028C55066F7B39BEFD2F701BEF2EFD /* NSMethodSignature+OCMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E12CC749A05AA54134D344666759E306 /* NSMethodSignature+OCMAdditions.h */; };
+		F477D1385F2F1FA0E54B98A319741B4F /* OCMExpectationRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A13158FACC837702ADCB3B103914D5 /* OCMExpectationRecorder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F6F56C5C425567744615AF331728D674 /* OCPartialMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2139E24F114542FB2CADE9E15E3EB4 /* OCPartialMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F891880CA275C1D9A50A4B0A0CF18D78 /* OCObserverMockObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 707E5E017E8DA8B71221DA6A4AACDD66 /* OCObserverMockObject.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		74DFF8DE566AAB52D57C781528612C7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A336D972A58181FDB451CDE97E2C91FB;
+			remoteInfo = OCMock;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		14E26F182C625148EC48939CFF26DC45 /* Pods-WeChatBuddyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeChatBuddyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		156052C7DD6A7BFF6BBC72CE95D9120B /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		176AC4E54E5D939F0BF6A5977E5BFF08 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FFF42DFC9BADF9D9BF8368FCE244430 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleVendor.framework; sourceTree = "<group>"; };
-		25043002C15EAD3AD73E868A1EA648AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34CD8310204D315CA37D4838655681A1 /* Pods-WeChatBuddy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WeChatBuddy.modulemap"; sourceTree = "<group>"; };
-		35D7F375472A9B2E8CE098CB66B1D59B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3C607CC546AE5C2E30F1EC0B46B7102C /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		478552F7FD2D5D232C2132B9815EEFEA /* Pods-WeChatBuddy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeChatBuddy-resources.sh"; sourceTree = "<group>"; };
-		4C49CE01547EB4B666DF7EC6C43EE2D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		511E74E0BD9A86FDB66A4DF72D756948 /* Pods-WeChatBuddy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeChatBuddy-umbrella.h"; sourceTree = "<group>"; };
-		55F86D395D0CB8BA244803F972847333 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59F7721CE9134EA52A96204B60CA9205 /* Pods-WeChatBuddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeChatBuddyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5C415BEED766622F2A9CA0FCCC289091 /* Pods-WeChatBuddy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeChatBuddy-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6146BB43E29D5EB379870D274080600B /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		6355E80B839071C4E9F205F0D3C84B34 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		68D6E7B3B326A240AAB038974DA0CA42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		6D450319E96F2E57FCE566612AAB4DB4 /* Pods-WeChatBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeChatBuddy.release.xcconfig"; sourceTree = "<group>"; };
-		74EA70FE625146B05FD779BF212C752F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		91B49C690B3C2CA8B89D71FABE831B5A /* Pods-WeChatBuddyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeChatBuddyTests-resources.sh"; sourceTree = "<group>"; };
-		975087A90B17DE453FAEBF00654439F8 /* Pods_WeChatBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeChatBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9887104BC5842D16B3F75968CFD839DE /* Pods-WeChatBuddyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeChatBuddyTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9F0D27D1777F12E0AC3E3A30C18071F2 /* Pods-WeChatBuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeChatBuddyTests.release.xcconfig"; sourceTree = "<group>"; };
-		A5A000540D6D43F631FF595DDBF8A315 /* Pods-WeChatBuddyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeChatBuddyTests-frameworks.sh"; sourceTree = "<group>"; };
-		A8003DE58948A3D0B4C4FE9FA034A0EC /* Pods_WeChatBuddyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeChatBuddyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAE65926C2AB1903EB6587490D0702CC /* Pods-WeChatBuddyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WeChatBuddyTests.modulemap"; sourceTree = "<group>"; };
-		B596D920EC3B51DC434911A696C98DC1 /* Pods-WeChatBuddy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeChatBuddy-frameworks.sh"; sourceTree = "<group>"; };
+		00FDC1976E97CA54FBCF6B227AA358D3 /* Pods-WeChatBuddy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeChatBuddy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		02F58638FE987BA5C6DDB250C79B8ECF /* OCMReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMReturnValueProvider.m; path = Source/OCMock/OCMReturnValueProvider.m; sourceTree = "<group>"; };
+		082BCB74395FBD21FBA38B3EC946519C /* OCMConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMConstraint.m; path = Source/OCMock/OCMConstraint.m; sourceTree = "<group>"; };
+		12B3302E6CF3D5CC5B3D30B72CCF1A77 /* OCMConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = Source/OCMock/OCMConstraint.h; sourceTree = "<group>"; };
+		179D7B37DCE89B3C0EE72DD68E34A3C4 /* OCMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMRecorder.h; path = Source/OCMock/OCMRecorder.h; sourceTree = "<group>"; };
+		1803D0D5B9C65DDF7C6AA786F2A355A0 /* OCMReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMReturnValueProvider.h; path = Source/OCMock/OCMReturnValueProvider.h; sourceTree = "<group>"; };
+		196615221222C2AC89B94DD730F4036B /* OCObserverMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCObserverMockObject.m; path = Source/OCMock/OCObserverMockObject.m; sourceTree = "<group>"; };
+		1A0CB713DE1EB5DEE4EE8D95D8BC0AD3 /* OCMLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMLocation.m; path = Source/OCMock/OCMLocation.m; sourceTree = "<group>"; };
+		1B596DD450694642A7F6321A9CD1F158 /* Pods-WeChatBuddyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeChatBuddyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1C9F02D08BFB9647253423504EF66DC3 /* OCMStubRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMStubRecorder.h; path = Source/OCMock/OCMStubRecorder.h; sourceTree = "<group>"; };
+		1CC7F4E4AF6CE6D8415220621B58A55F /* OCMExceptionReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExceptionReturnValueProvider.m; path = Source/OCMock/OCMExceptionReturnValueProvider.m; sourceTree = "<group>"; };
+		1EDA46189CE5EADB9AE5C76EA4A6FDBB /* NSValue+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+OCMAdditions.h"; path = "Source/OCMock/NSValue+OCMAdditions.h"; sourceTree = "<group>"; };
+		20AF672CCAAEBF605F04CFDEB6CB0063 /* Pods-WeChatBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeChatBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		21C038873F79DEF3690F7F41E7B5ECF8 /* OCMExceptionReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExceptionReturnValueProvider.h; path = Source/OCMock/OCMExceptionReturnValueProvider.h; sourceTree = "<group>"; };
+		21C6D83F4A5AE43A6413719CF2CBAC05 /* OCMock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OCMock.xcconfig; sourceTree = "<group>"; };
+		23EC1A463C33FD9D789AC72094C571C1 /* OCMVerifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMVerifier.h; path = Source/OCMock/OCMVerifier.h; sourceTree = "<group>"; };
+		242A5AEC3AA89B513B23478087D5E3E2 /* NSValue+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+OCMAdditions.m"; path = "Source/OCMock/NSValue+OCMAdditions.m"; sourceTree = "<group>"; };
+		26CA24D73974572811820891BA80859A /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		2AB4BE211ECFF03E9E08B230F368E528 /* NSNotificationCenter+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+OCMAdditions.m"; path = "Source/OCMock/NSNotificationCenter+OCMAdditions.m"; sourceTree = "<group>"; };
+		2CF273CF08D18C685D20FF04BD17DD40 /* OCMInvocationStub.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationStub.h; path = Source/OCMock/OCMInvocationStub.h; sourceTree = "<group>"; };
+		2D7C4AFC4C6665E8F0DA774B7338670D /* OCMNotificationPoster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMNotificationPoster.m; path = Source/OCMock/OCMNotificationPoster.m; sourceTree = "<group>"; };
+		31DB2DF29A24601F2C2A1E66E97B29DE /* OCMock-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OCMock-Private.xcconfig"; sourceTree = "<group>"; };
+		32D0515C743C0E97E2F14F007C718AE5 /* OCMVerifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMVerifier.m; path = Source/OCMock/OCMVerifier.m; sourceTree = "<group>"; };
+		3ADA0DEBE7E9673679012227562D23F8 /* OCMExpectationRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMExpectationRecorder.h; path = Source/OCMock/OCMExpectationRecorder.h; sourceTree = "<group>"; };
+		3E23EE3F73877E868A9763823C305821 /* OCMInvocationStub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationStub.m; path = Source/OCMock/OCMInvocationStub.m; sourceTree = "<group>"; };
+		3EE621DD6833AB676C3AF341C04CBA0E /* OCMBoxedReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBoxedReturnValueProvider.h; path = Source/OCMock/OCMBoxedReturnValueProvider.h; sourceTree = "<group>"; };
+		439A217BB5BA6F1D4172AD8CAA941D2D /* OCProtocolMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCProtocolMockObject.m; path = Source/OCMock/OCProtocolMockObject.m; sourceTree = "<group>"; };
+		43C429616574B818D0B9045BB964EDEE /* Pods-WeChatBuddyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeChatBuddyTests.release.xcconfig"; sourceTree = "<group>"; };
+		45A4ADABFAAFBF58F1D72B5DCDE0BF73 /* libPods-WeChatBuddyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeChatBuddyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		463578F94DF7356344BF16AB87A9A10E /* OCMArg.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMArg.m; path = Source/OCMock/OCMArg.m; sourceTree = "<group>"; };
+		51A13158FACC837702ADCB3B103914D5 /* OCMExpectationRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMExpectationRecorder.m; path = Source/OCMock/OCMExpectationRecorder.m; sourceTree = "<group>"; };
+		53446228A5C45E5242D4DE2457EEBDFD /* OCMRealObjectForwarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMRealObjectForwarder.h; path = Source/OCMock/OCMRealObjectForwarder.h; sourceTree = "<group>"; };
+		55797EACF575C79F9D3AFC59F61F7B05 /* OCMArg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = Source/OCMock/OCMArg.h; sourceTree = "<group>"; };
+		58793831CEBCA3E2BE65DA272BF622AE /* OCMIndirectReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMIndirectReturnValueProvider.m; path = Source/OCMock/OCMIndirectReturnValueProvider.m; sourceTree = "<group>"; };
+		58DB71FBF87526E49F5231754D0357A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5CEBB6C05F332AE2AA300E0A729EDCE6 /* OCMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = Source/OCMock/OCMock.h; sourceTree = "<group>"; };
+		668C9EA76474ED299E0FECE0291CD3CB /* OCMock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCMock-dummy.m"; sourceTree = "<group>"; };
+		66B39CF59690F5641713D81BE96F5CBA /* OCMStubRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMStubRecorder.m; path = Source/OCMock/OCMStubRecorder.m; sourceTree = "<group>"; };
+		6C0317451A7229EFCD3D811D2E5E8A25 /* OCMPassByRefSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMPassByRefSetter.m; path = Source/OCMock/OCMPassByRefSetter.m; sourceTree = "<group>"; };
+		6CB65F61ED310360EE39F4354B743509 /* Pods-WeChatBuddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeChatBuddyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DF7ACAF7373BC786334DFD30AB85904 /* OCMObserverRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMObserverRecorder.m; path = Source/OCMock/OCMObserverRecorder.m; sourceTree = "<group>"; };
+		6E2139E24F114542FB2CADE9E15E3EB4 /* OCPartialMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCPartialMockObject.m; path = Source/OCMock/OCPartialMockObject.m; sourceTree = "<group>"; };
+		707E5E017E8DA8B71221DA6A4AACDD66 /* OCObserverMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCObserverMockObject.h; path = Source/OCMock/OCObserverMockObject.h; sourceTree = "<group>"; };
+		72505DDB25C6B62B0A48CC1D73050835 /* OCMBlockCaller.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMBlockCaller.h; path = Source/OCMock/OCMBlockCaller.h; sourceTree = "<group>"; };
+		75AF3EA96DF67B4222E76854F5AA03EF /* OCMObserverRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMObserverRecorder.h; path = Source/OCMock/OCMObserverRecorder.h; sourceTree = "<group>"; };
+		77B7C167ED0CFA64AD49420CCD0550FF /* OCMFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMFunctions.m; path = Source/OCMock/OCMFunctions.m; sourceTree = "<group>"; };
+		8076A2B6027F7215EA6D17FCBA4CB7F4 /* Pods-WeChatBuddy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeChatBuddy-resources.sh"; sourceTree = "<group>"; };
+		8421BCA529D3EBC13F9D025F8BC2704B /* OCMMacroState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMMacroState.m; path = Source/OCMock/OCMMacroState.m; sourceTree = "<group>"; };
+		8ABAE3D92CAEC084073AB626487A31EC /* OCClassMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCClassMockObject.m; path = Source/OCMock/OCClassMockObject.m; sourceTree = "<group>"; };
+		8C2BBB0E42BD4068ECBB18AE5C08AE1F /* OCMockObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMockObject.m; path = Source/OCMock/OCMockObject.m; sourceTree = "<group>"; };
+		8DE56323B289ED8AD758D36C8C958A2F /* OCMInvocationExpectation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationExpectation.m; path = Source/OCMock/OCMInvocationExpectation.m; sourceTree = "<group>"; };
+		9169FD66B215EFA9B7E78B5A677AD2FC /* NSObject+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+OCMAdditions.h"; path = "Source/OCMock/NSObject+OCMAdditions.h"; sourceTree = "<group>"; };
+		93B5A37331B4EBC373ED45878B3A3DB2 /* OCMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = Source/OCMock/OCMockObject.h; sourceTree = "<group>"; };
+		946F98D32AADBA3E918EBBE03B46AE87 /* OCMBoxedReturnValueProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBoxedReturnValueProvider.m; path = Source/OCMock/OCMBoxedReturnValueProvider.m; sourceTree = "<group>"; };
+		9577C19F10F5CD9DDDAEA395A553D7DB /* OCMLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMLocation.h; path = Source/OCMock/OCMLocation.h; sourceTree = "<group>"; };
+		986367FD1DA7178DE78169CD3EA320E8 /* OCMNotificationPoster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMNotificationPoster.h; path = Source/OCMock/OCMNotificationPoster.h; sourceTree = "<group>"; };
+		9A4378744339081DA9590D591ABADEC1 /* OCClassMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCClassMockObject.h; path = Source/OCMock/OCClassMockObject.h; sourceTree = "<group>"; };
+		9B8B50F74275316506E2A9361525BF1C /* OCMIndirectReturnValueProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMIndirectReturnValueProvider.h; path = Source/OCMock/OCMIndirectReturnValueProvider.h; sourceTree = "<group>"; };
+		A46856006FF200A04D5F5D6B570D833C /* Pods-WeChatBuddyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeChatBuddyTests-dummy.m"; sourceTree = "<group>"; };
+		A4E2BABB1E4905DF1FBD48CB03A4FCCF /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleKit.framework; sourceTree = "<group>"; };
+		B38E7FEE0D0BEEA6C1292FE762BA5886 /* libPods-WeChatBuddy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeChatBuddy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5786D15CA50BB76DA31B6044EB0D20E /* Pods-WeChatBuddy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeChatBuddy-dummy.m"; sourceTree = "<group>"; };
+		B5AFC6FD18FE85009FFFC3D787F70A98 /* OCMBlockCaller.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMBlockCaller.m; path = Source/OCMock/OCMBlockCaller.m; sourceTree = "<group>"; };
+		B6858AF1EEED7CEAD09806FFC2F5CD49 /* OCMRealObjectForwarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRealObjectForwarder.m; path = Source/OCMock/OCMRealObjectForwarder.m; sourceTree = "<group>"; };
+		BA07A13BFAB257159E2641D2BDEFDABA /* NSMethodSignature+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMethodSignature+OCMAdditions.m"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C7C7A2494777834C12FCFF14A18C574F /* Pods-WeChatBuddy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeChatBuddy-acknowledgements.plist"; sourceTree = "<group>"; };
-		CA24F110EE57CEC58A3A1455A5D6B345 /* Pods-WeChatBuddyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeChatBuddyTests-dummy.m"; sourceTree = "<group>"; };
-		D7B0FBFFD560C02409CD4493EC3CD9F5 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		D9411C78FFB4018655C9E899F2FFCAA4 /* Pods-WeChatBuddy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeChatBuddy-dummy.m"; sourceTree = "<group>"; };
-		E01FED43371E14A84C6F201CE279DC5C /* Pods-WeChatBuddyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeChatBuddyTests-umbrella.h"; sourceTree = "<group>"; };
-		E470C26BA0E2750C086043E4383D9436 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		F1EA790EB1C8B1DA66D95AB9142D1AD5 /* Pods-WeChatBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeChatBuddy.debug.xcconfig"; sourceTree = "<group>"; };
-		F651FB5B85430E4078501908844DCCE4 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FDB9670906816F2D081369656CC28AC9 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleKit.framework; sourceTree = "<group>"; };
+		BEC324EB2233ED3040519425A7FF25BC /* OCMInvocationMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMInvocationMatcher.m; path = Source/OCMock/OCMInvocationMatcher.m; sourceTree = "<group>"; };
+		BF5CF031DE22CF519CB924A187E2CD31 /* OCMock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMock-prefix.pch"; sourceTree = "<group>"; };
+		C4D339CF52E9DFD64B860403AFAC5563 /* OCPartialMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCPartialMockObject.h; path = Source/OCMock/OCPartialMockObject.h; sourceTree = "<group>"; };
+		C502BDAFF42926C885528DBA9F1D335F /* libOCMock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOCMock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7BE02D8FA49B28BFB7B4D33A59CDC6D /* OCMMacroState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMMacroState.h; path = Source/OCMock/OCMMacroState.h; sourceTree = "<group>"; };
+		CC814BFDDF210484BCFA01DF6521A965 /* Pods-WeChatBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeChatBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		D1BE569152FAE45FFF828126C35E9E70 /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+OCMAdditions.h"; path = "Source/OCMock/NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
+		D25A91F3B64E168811A25F9EBE656D39 /* Pods-WeChatBuddy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeChatBuddy-acknowledgements.plist"; sourceTree = "<group>"; };
+		D5F4177E8C23FF0E2197C9385FFB5A4B /* OCProtocolMockObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCProtocolMockObject.h; path = Source/OCMock/OCProtocolMockObject.h; sourceTree = "<group>"; };
+		DA3E4034A5D3BBB8ADCF2B0FE9151F9B /* OCMRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OCMRecorder.m; path = Source/OCMock/OCMRecorder.m; sourceTree = "<group>"; };
+		DF680213D2C6B946082B81FA5A6AD26B /* OCMFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMFunctions.h; path = Source/OCMock/OCMFunctions.h; sourceTree = "<group>"; };
+		E12CC749A05AA54134D344666759E306 /* NSMethodSignature+OCMAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMethodSignature+OCMAdditions.h"; path = "Source/OCMock/NSMethodSignature+OCMAdditions.h"; sourceTree = "<group>"; };
+		E4E4D4099043ACD8395211D4CC576683 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleVendor.framework; sourceTree = "<group>"; };
+		E6A8653F9255CCAC8730A2B348A7720D /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSInvocation+OCMAdditions.m"; path = "Source/OCMock/NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
+		E8015BB56990A874BD40658833233ACE /* OCMPassByRefSetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMPassByRefSetter.h; path = Source/OCMock/OCMPassByRefSetter.h; sourceTree = "<group>"; };
+		E878C6CED5F911C141EEFEC23CA5D05E /* Pods-WeChatBuddyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeChatBuddyTests-resources.sh"; sourceTree = "<group>"; };
+		EAB7FCA5060F7911D269C6786AC4EAFE /* NSObject+OCMAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+OCMAdditions.m"; path = "Source/OCMock/NSObject+OCMAdditions.m"; sourceTree = "<group>"; };
+		EEC0CB82E7A076F0D075AE8CD9439292 /* OCMInvocationMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationMatcher.h; path = Source/OCMock/OCMInvocationMatcher.h; sourceTree = "<group>"; };
+		F4E2E9070C5AC178048AC0CCB2C0C1B3 /* OCMInvocationExpectation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OCMInvocationExpectation.h; path = Source/OCMock/OCMInvocationExpectation.h; sourceTree = "<group>"; };
+		FEDD4BBAC92EB91029C78405F5598FDC /* Pods-WeChatBuddyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeChatBuddyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B20F1416C4DDC2C3DDD0F75AB3DA0151 /* Frameworks */ = {
+		5CD99936099A934037267A249806DDB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABB5A6A78BE878ECF668EDC61B1CECE8 /* Foundation.framework in Frameworks */,
+				15E8DAA35E060C5CBD82590BBC36858D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3168C673007601935FDD8CF0A0C1C66 /* Frameworks */ = {
+		D17DB1F2FA4877DD7EB50AFE352F8FA1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98E55E8D3CA662C49E3F8F55DBC24C49 /* Foundation.framework in Frameworks */,
+				1D87C34F9A2C43B635C152AB5A11F2F6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F91E925E98F7AFC661D4B64CF7F79B7C /* Frameworks */ = {
+		FE914815CBC0C6171E6B9CFCCA60DF3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92DC8D970381FD88B9736E563690927F /* Foundation.framework in Frameworks */,
+				970CBE3CB34924517C032C5D7408F88A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1395C5A95B24A401C33BF070A8589CE2 /* Pods-WeChatBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				00FDC1976E97CA54FBCF6B227AA358D3 /* Pods-WeChatBuddy-acknowledgements.markdown */,
+				D25A91F3B64E168811A25F9EBE656D39 /* Pods-WeChatBuddy-acknowledgements.plist */,
+				B5786D15CA50BB76DA31B6044EB0D20E /* Pods-WeChatBuddy-dummy.m */,
+				8076A2B6027F7215EA6D17FCBA4CB7F4 /* Pods-WeChatBuddy-resources.sh */,
+				CC814BFDDF210484BCFA01DF6521A965 /* Pods-WeChatBuddy.debug.xcconfig */,
+				20AF672CCAAEBF605F04CFDEB6CB0063 /* Pods-WeChatBuddy.release.xcconfig */,
+			);
+			name = "Pods-WeChatBuddy";
+			path = "Target Support Files/Pods-WeChatBuddy";
+			sourceTree = "<group>";
+		};
+		21BF732E2E2D5917CAACF359DAF1DDAC /* PebbleKit */ = {
+			isa = PBXGroup;
+			children = (
+				93C59435ABDB25F27FCA6DC3BE135A76 /* Frameworks */,
+			);
+			path = PebbleKit;
+			sourceTree = "<group>";
+		};
+		30E6DD8078579EB73EC13CF9935B330F /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				D1BE569152FAE45FFF828126C35E9E70 /* NSInvocation+OCMAdditions.h */,
+				E6A8653F9255CCAC8730A2B348A7720D /* NSInvocation+OCMAdditions.m */,
+				E12CC749A05AA54134D344666759E306 /* NSMethodSignature+OCMAdditions.h */,
+				BA07A13BFAB257159E2641D2BDEFDABA /* NSMethodSignature+OCMAdditions.m */,
+				26CA24D73974572811820891BA80859A /* NSNotificationCenter+OCMAdditions.h */,
+				2AB4BE211ECFF03E9E08B230F368E528 /* NSNotificationCenter+OCMAdditions.m */,
+				9169FD66B215EFA9B7E78B5A677AD2FC /* NSObject+OCMAdditions.h */,
+				EAB7FCA5060F7911D269C6786AC4EAFE /* NSObject+OCMAdditions.m */,
+				1EDA46189CE5EADB9AE5C76EA4A6FDBB /* NSValue+OCMAdditions.h */,
+				242A5AEC3AA89B513B23478087D5E3E2 /* NSValue+OCMAdditions.m */,
+				9A4378744339081DA9590D591ABADEC1 /* OCClassMockObject.h */,
+				8ABAE3D92CAEC084073AB626487A31EC /* OCClassMockObject.m */,
+				55797EACF575C79F9D3AFC59F61F7B05 /* OCMArg.h */,
+				463578F94DF7356344BF16AB87A9A10E /* OCMArg.m */,
+				72505DDB25C6B62B0A48CC1D73050835 /* OCMBlockCaller.h */,
+				B5AFC6FD18FE85009FFFC3D787F70A98 /* OCMBlockCaller.m */,
+				3EE621DD6833AB676C3AF341C04CBA0E /* OCMBoxedReturnValueProvider.h */,
+				946F98D32AADBA3E918EBBE03B46AE87 /* OCMBoxedReturnValueProvider.m */,
+				12B3302E6CF3D5CC5B3D30B72CCF1A77 /* OCMConstraint.h */,
+				082BCB74395FBD21FBA38B3EC946519C /* OCMConstraint.m */,
+				21C038873F79DEF3690F7F41E7B5ECF8 /* OCMExceptionReturnValueProvider.h */,
+				1CC7F4E4AF6CE6D8415220621B58A55F /* OCMExceptionReturnValueProvider.m */,
+				3ADA0DEBE7E9673679012227562D23F8 /* OCMExpectationRecorder.h */,
+				51A13158FACC837702ADCB3B103914D5 /* OCMExpectationRecorder.m */,
+				DF680213D2C6B946082B81FA5A6AD26B /* OCMFunctions.h */,
+				77B7C167ED0CFA64AD49420CCD0550FF /* OCMFunctions.m */,
+				9B8B50F74275316506E2A9361525BF1C /* OCMIndirectReturnValueProvider.h */,
+				58793831CEBCA3E2BE65DA272BF622AE /* OCMIndirectReturnValueProvider.m */,
+				F4E2E9070C5AC178048AC0CCB2C0C1B3 /* OCMInvocationExpectation.h */,
+				8DE56323B289ED8AD758D36C8C958A2F /* OCMInvocationExpectation.m */,
+				EEC0CB82E7A076F0D075AE8CD9439292 /* OCMInvocationMatcher.h */,
+				BEC324EB2233ED3040519425A7FF25BC /* OCMInvocationMatcher.m */,
+				2CF273CF08D18C685D20FF04BD17DD40 /* OCMInvocationStub.h */,
+				3E23EE3F73877E868A9763823C305821 /* OCMInvocationStub.m */,
+				9577C19F10F5CD9DDDAEA395A553D7DB /* OCMLocation.h */,
+				1A0CB713DE1EB5DEE4EE8D95D8BC0AD3 /* OCMLocation.m */,
+				C7BE02D8FA49B28BFB7B4D33A59CDC6D /* OCMMacroState.h */,
+				8421BCA529D3EBC13F9D025F8BC2704B /* OCMMacroState.m */,
+				986367FD1DA7178DE78169CD3EA320E8 /* OCMNotificationPoster.h */,
+				2D7C4AFC4C6665E8F0DA774B7338670D /* OCMNotificationPoster.m */,
+				75AF3EA96DF67B4222E76854F5AA03EF /* OCMObserverRecorder.h */,
+				6DF7ACAF7373BC786334DFD30AB85904 /* OCMObserverRecorder.m */,
+				E8015BB56990A874BD40658833233ACE /* OCMPassByRefSetter.h */,
+				6C0317451A7229EFCD3D811D2E5E8A25 /* OCMPassByRefSetter.m */,
+				53446228A5C45E5242D4DE2457EEBDFD /* OCMRealObjectForwarder.h */,
+				B6858AF1EEED7CEAD09806FFC2F5CD49 /* OCMRealObjectForwarder.m */,
+				179D7B37DCE89B3C0EE72DD68E34A3C4 /* OCMRecorder.h */,
+				DA3E4034A5D3BBB8ADCF2B0FE9151F9B /* OCMRecorder.m */,
+				1803D0D5B9C65DDF7C6AA786F2A355A0 /* OCMReturnValueProvider.h */,
+				02F58638FE987BA5C6DDB250C79B8ECF /* OCMReturnValueProvider.m */,
+				1C9F02D08BFB9647253423504EF66DC3 /* OCMStubRecorder.h */,
+				66B39CF59690F5641713D81BE96F5CBA /* OCMStubRecorder.m */,
+				23EC1A463C33FD9D789AC72094C571C1 /* OCMVerifier.h */,
+				32D0515C743C0E97E2F14F007C718AE5 /* OCMVerifier.m */,
+				5CEBB6C05F332AE2AA300E0A729EDCE6 /* OCMock.h */,
+				93B5A37331B4EBC373ED45878B3A3DB2 /* OCMockObject.h */,
+				8C2BBB0E42BD4068ECBB18AE5C08AE1F /* OCMockObject.m */,
+				707E5E017E8DA8B71221DA6A4AACDD66 /* OCObserverMockObject.h */,
+				196615221222C2AC89B94DD730F4036B /* OCObserverMockObject.m */,
+				C4D339CF52E9DFD64B860403AFAC5563 /* OCPartialMockObject.h */,
+				6E2139E24F114542FB2CADE9E15E3EB4 /* OCPartialMockObject.m */,
+				D5F4177E8C23FF0E2197C9385FFB5A4B /* OCProtocolMockObject.h */,
+				439A217BB5BA6F1D4172AD8CAA941D2D /* OCProtocolMockObject.m */,
+				FD20E4A1339D49846C600819D52FBC82 /* Support Files */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				35D7F375472A9B2E8CE098CB66B1D59B /* Foundation.framework */,
+				58DB71FBF87526E49F5231754D0357A6 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		709D23A72AA33BB430DDCB89507D89DF /* Frameworks */ = {
+		5DE83AEE9327A283FB6BC8971733F37A /* Pods-WeChatBuddyTests */ = {
 			isa = PBXGroup;
 			children = (
-				FDB9670906816F2D081369656CC28AC9 /* PebbleKit.framework */,
-				1FFF42DFC9BADF9D9BF8368FCE244430 /* PebbleVendor.framework */,
+				FEDD4BBAC92EB91029C78405F5598FDC /* Pods-WeChatBuddyTests-acknowledgements.markdown */,
+				1B596DD450694642A7F6321A9CD1F158 /* Pods-WeChatBuddyTests-acknowledgements.plist */,
+				A46856006FF200A04D5F5D6B570D833C /* Pods-WeChatBuddyTests-dummy.m */,
+				E878C6CED5F911C141EEFEC23CA5D05E /* Pods-WeChatBuddyTests-resources.sh */,
+				6CB65F61ED310360EE39F4354B743509 /* Pods-WeChatBuddyTests.debug.xcconfig */,
+				43C429616574B818D0B9045BB964EDEE /* Pods-WeChatBuddyTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-WeChatBuddyTests";
+			path = "Target Support Files/Pods-WeChatBuddyTests";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -108,62 +325,28 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B1A1325BF16EE1D02673DE9296F6E218 /* Pods */,
+				BD49EDAEA8B753FF48D2E3459D4A23B3 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				E0632CB312F55FA2F133C002387D7029 /* Targets Support Files */,
+				9BFBD9B48295380A2A7CCB449698DB58 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8C2DA284ECDDC96678E85FBF574446D3 /* Pods-WeChatBuddy */ = {
+		93C59435ABDB25F27FCA6DC3BE135A76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C49CE01547EB4B666DF7EC6C43EE2D7 /* Info.plist */,
-				34CD8310204D315CA37D4838655681A1 /* Pods-WeChatBuddy.modulemap */,
-				5C415BEED766622F2A9CA0FCCC289091 /* Pods-WeChatBuddy-acknowledgements.markdown */,
-				C7C7A2494777834C12FCFF14A18C574F /* Pods-WeChatBuddy-acknowledgements.plist */,
-				D9411C78FFB4018655C9E899F2FFCAA4 /* Pods-WeChatBuddy-dummy.m */,
-				B596D920EC3B51DC434911A696C98DC1 /* Pods-WeChatBuddy-frameworks.sh */,
-				478552F7FD2D5D232C2132B9815EEFEA /* Pods-WeChatBuddy-resources.sh */,
-				511E74E0BD9A86FDB66A4DF72D756948 /* Pods-WeChatBuddy-umbrella.h */,
-				F1EA790EB1C8B1DA66D95AB9142D1AD5 /* Pods-WeChatBuddy.debug.xcconfig */,
-				6D450319E96F2E57FCE566612AAB4DB4 /* Pods-WeChatBuddy.release.xcconfig */,
+				A4E2BABB1E4905DF1FBD48CB03A4FCCF /* PebbleKit.framework */,
+				E4E4D4099043ACD8395211D4CC576683 /* PebbleVendor.framework */,
 			);
-			name = "Pods-WeChatBuddy";
-			path = "Target Support Files/Pods-WeChatBuddy";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A4B7F458FABD033E3140D61A6F39C484 /* PebbleKit */ = {
+		9BFBD9B48295380A2A7CCB449698DB58 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				709D23A72AA33BB430DDCB89507D89DF /* Frameworks */,
+				1395C5A95B24A401C33BF070A8589CE2 /* Pods-WeChatBuddy */,
+				5DE83AEE9327A283FB6BC8971733F37A /* Pods-WeChatBuddyTests */,
 			);
-			path = PebbleKit;
-			sourceTree = "<group>";
-		};
-		AEAE39A2488D34832CFE52BBAE068AFA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				55F86D395D0CB8BA244803F972847333 /* Info.plist */,
-				6146BB43E29D5EB379870D274080600B /* Pods.modulemap */,
-				F651FB5B85430E4078501908844DCCE4 /* Pods-acknowledgements.markdown */,
-				6355E80B839071C4E9F205F0D3C84B34 /* Pods-acknowledgements.plist */,
-				E470C26BA0E2750C086043E4383D9436 /* Pods-dummy.m */,
-				D7B0FBFFD560C02409CD4493EC3CD9F5 /* Pods-frameworks.sh */,
-				3C607CC546AE5C2E30F1EC0B46B7102C /* Pods-resources.sh */,
-				156052C7DD6A7BFF6BBC72CE95D9120B /* Pods-umbrella.h */,
-				74EA70FE625146B05FD779BF212C752F /* Pods.debug.xcconfig */,
-				68D6E7B3B326A240AAB038974DA0CA42 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		B1A1325BF16EE1D02673DE9296F6E218 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A4B7F458FABD033E3140D61A6F39C484 /* PebbleKit */,
-			);
-			name = Pods;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -174,98 +357,88 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD49EDAEA8B753FF48D2E3459D4A23B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30E6DD8078579EB73EC13CF9935B330F /* OCMock */,
+				21BF732E2E2D5917CAACF359DAF1DDAC /* PebbleKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				176AC4E54E5D939F0BF6A5977E5BFF08 /* Pods.framework */,
-				975087A90B17DE453FAEBF00654439F8 /* Pods_WeChatBuddy.framework */,
-				A8003DE58948A3D0B4C4FE9FA034A0EC /* Pods_WeChatBuddyTests.framework */,
+				C502BDAFF42926C885528DBA9F1D335F /* libOCMock.a */,
+				B38E7FEE0D0BEEA6C1292FE762BA5886 /* libPods-WeChatBuddy.a */,
+				45A4ADABFAAFBF58F1D72B5DCDE0BF73 /* libPods-WeChatBuddyTests.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E0632CB312F55FA2F133C002387D7029 /* Targets Support Files */ = {
+		FD20E4A1339D49846C600819D52FBC82 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AEAE39A2488D34832CFE52BBAE068AFA /* Pods */,
-				8C2DA284ECDDC96678E85FBF574446D3 /* Pods-WeChatBuddy */,
-				FC11FDF7AF64E8F51BF72FBCC8190BDA /* Pods-WeChatBuddyTests */,
+				21C6D83F4A5AE43A6413719CF2CBAC05 /* OCMock.xcconfig */,
+				31DB2DF29A24601F2C2A1E66E97B29DE /* OCMock-Private.xcconfig */,
+				668C9EA76474ED299E0FECE0291CD3CB /* OCMock-dummy.m */,
+				BF5CF031DE22CF519CB924A187E2CD31 /* OCMock-prefix.pch */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FC11FDF7AF64E8F51BF72FBCC8190BDA /* Pods-WeChatBuddyTests */ = {
-			isa = PBXGroup;
-			children = (
-				25043002C15EAD3AD73E868A1EA648AA /* Info.plist */,
-				AAE65926C2AB1903EB6587490D0702CC /* Pods-WeChatBuddyTests.modulemap */,
-				14E26F182C625148EC48939CFF26DC45 /* Pods-WeChatBuddyTests-acknowledgements.markdown */,
-				9887104BC5842D16B3F75968CFD839DE /* Pods-WeChatBuddyTests-acknowledgements.plist */,
-				CA24F110EE57CEC58A3A1455A5D6B345 /* Pods-WeChatBuddyTests-dummy.m */,
-				A5A000540D6D43F631FF595DDBF8A315 /* Pods-WeChatBuddyTests-frameworks.sh */,
-				91B49C690B3C2CA8B89D71FABE831B5A /* Pods-WeChatBuddyTests-resources.sh */,
-				E01FED43371E14A84C6F201CE279DC5C /* Pods-WeChatBuddyTests-umbrella.h */,
-				59F7721CE9134EA52A96204B60CA9205 /* Pods-WeChatBuddyTests.debug.xcconfig */,
-				9F0D27D1777F12E0AC3E3A30C18071F2 /* Pods-WeChatBuddyTests.release.xcconfig */,
-			);
-			name = "Pods-WeChatBuddyTests";
-			path = "Target Support Files/Pods-WeChatBuddyTests";
+			name = "Support Files";
+			path = "../Target Support Files/OCMock";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		301EEE3C205F0C37FC5117EE8FCC148C /* Headers */ = {
+		314C0F4AC13F7A3E22EF58F32659F4D0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03FEEE61E6EE3E1882BE9CDACEAA27A /* Pods-WeChatBuddyTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		59A00F9704B6AFE0A9DC699A4B8B033F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				024C103848113AEF76AC5A742AF80B75 /* Pods-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF9E23CC0ABEE4F8AF5A2243233E2F1B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9395FA8F0A55602E7109337D6EAF537 /* Pods-WeChatBuddy-umbrella.h in Headers */,
+				0912C5340AF08F263BE2AD65C4F066CA /* NSInvocation+OCMAdditions.h in Headers */,
+				F2028C55066F7B39BEFD2F701BEF2EFD /* NSMethodSignature+OCMAdditions.h in Headers */,
+				9B41B9132B2CA633C4FE63512FCC9E17 /* NSNotificationCenter+OCMAdditions.h in Headers */,
+				36C5E6771B91CF1500D633942D12835D /* NSObject+OCMAdditions.h in Headers */,
+				E2B48A0F17C90B7FB7462567C010A46C /* NSValue+OCMAdditions.h in Headers */,
+				2920EC572D60E228D79AA27F8AA7938D /* OCClassMockObject.h in Headers */,
+				EA86DFBE245F7DBEE7F4974754EEC588 /* OCMArg.h in Headers */,
+				3404D72391228D370F1F242D81B164B4 /* OCMBlockCaller.h in Headers */,
+				EDF019FFE1DECB1E8BBF788CA2F79D75 /* OCMBoxedReturnValueProvider.h in Headers */,
+				33366B715B180D1D8754D023C17F7762 /* OCMConstraint.h in Headers */,
+				B922B71EF6DDFAD870DD64AF355CED6F /* OCMExceptionReturnValueProvider.h in Headers */,
+				0E69A4DCA23FCD4DD8A3F068765102FB /* OCMExpectationRecorder.h in Headers */,
+				A1EEBF27803D9700F9DB0381EE5210B5 /* OCMFunctions.h in Headers */,
+				791973A29086BAD35DCBE97C80C667E5 /* OCMIndirectReturnValueProvider.h in Headers */,
+				01128BA65DFD5F5A85C314C31A581F03 /* OCMInvocationExpectation.h in Headers */,
+				DB2313EE7C20D0DD233BAEDBE3E9AD48 /* OCMInvocationMatcher.h in Headers */,
+				0612C01861F9D4B5A4421C225215E5EE /* OCMInvocationStub.h in Headers */,
+				2C3573985BE899FD5F3D85C334775394 /* OCMLocation.h in Headers */,
+				9937668E2062B3A4E9C533B9DD673089 /* OCMMacroState.h in Headers */,
+				B5DC7F963F08D37957765F2789C15178 /* OCMNotificationPoster.h in Headers */,
+				A45A755E8576B43D3813E8A997AF353A /* OCMObserverRecorder.h in Headers */,
+				B60C05D9BB068764675EE14B0B14F744 /* OCMPassByRefSetter.h in Headers */,
+				3763DFD9839F11B3E303B96E3E7C326D /* OCMRealObjectForwarder.h in Headers */,
+				96B18C4D4A67EF0685ABD998B0EAA42F /* OCMRecorder.h in Headers */,
+				22551F60B6F2F4A9A6D0D6F97EC5B805 /* OCMReturnValueProvider.h in Headers */,
+				F05B5629F22B19301F71FDED52ED4EC1 /* OCMStubRecorder.h in Headers */,
+				B810DCAB6CB885D70B9A509C222DA2C5 /* OCMVerifier.h in Headers */,
+				83271BAB5EBD89A7CFA7A58ADD2DF30F /* OCMock.h in Headers */,
+				99C1C423A9701EC2AA1894F41A43ADC3 /* OCMockObject.h in Headers */,
+				F891880CA275C1D9A50A4B0A0CF18D78 /* OCObserverMockObject.h in Headers */,
+				745EAE4E52636EDAA4521ACF289B4AC2 /* OCPartialMockObject.h in Headers */,
+				6A2587DB25BEB625C3820A823BD7BBD1 /* OCProtocolMockObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1BA84416B19DF31967CCD7D02D962E49 /* Pods */ = {
+		661279BE309B50D0FAB17038C4BAD89B /* Pods-WeChatBuddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E151796BBCB376D96AD1C38DD0B21AC6 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 177D830CEA5C796983FC29FA2AF554A4 /* Build configuration list for PBXNativeTarget "Pods-WeChatBuddy" */;
 			buildPhases = (
-				94E92B28A5AF3478251705B46FC8586F /* Sources */,
-				F3168C673007601935FDD8CF0A0C1C66 /* Frameworks */,
-				59A00F9704B6AFE0A9DC699A4B8B033F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 176AC4E54E5D939F0BF6A5977E5BFF08 /* Pods.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6206BE08797D171BA71CEEC1C77B0F62 /* Pods-WeChatBuddy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C4242677759212B32FFA2805E9EEEE1A /* Build configuration list for PBXNativeTarget "Pods-WeChatBuddy" */;
-			buildPhases = (
-				AA93D64FC744FAB19A2F7417CA977350 /* Sources */,
-				F91E925E98F7AFC661D4B64CF7F79B7C /* Frameworks */,
-				FF9E23CC0ABEE4F8AF5A2243233E2F1B /* Headers */,
+				C577DE84372EEDFF06640E8DBDE98875 /* Sources */,
+				5CD99936099A934037267A249806DDB9 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,25 +446,42 @@
 			);
 			name = "Pods-WeChatBuddy";
 			productName = "Pods-WeChatBuddy";
-			productReference = 975087A90B17DE453FAEBF00654439F8 /* Pods_WeChatBuddy.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = B38E7FEE0D0BEEA6C1292FE762BA5886 /* libPods-WeChatBuddy.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		7884E33E1EBDBDFE712ADA1B186C5766 /* Pods-WeChatBuddyTests */ = {
+		7FAECEE69D68005C06B8FE7BFD7C9745 /* Pods-WeChatBuddyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F8A78042F262247E6E9656B381F9730 /* Build configuration list for PBXNativeTarget "Pods-WeChatBuddyTests" */;
+			buildConfigurationList = 9FC4F14A0E5C2B1B28E8038657C8CEE4 /* Build configuration list for PBXNativeTarget "Pods-WeChatBuddyTests" */;
 			buildPhases = (
-				C170BC44DD9A55B9E76E3A643FEA8BCA /* Sources */,
-				B20F1416C4DDC2C3DDD0F75AB3DA0151 /* Frameworks */,
-				301EEE3C205F0C37FC5117EE8FCC148C /* Headers */,
+				6EE31B2705F814FFB38337215DC37B99 /* Sources */,
+				D17DB1F2FA4877DD7EB50AFE352F8FA1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				678F292844FC6E1A9E888A7E9B9321B8 /* PBXTargetDependency */,
+			);
+			name = "Pods-WeChatBuddyTests";
+			productName = "Pods-WeChatBuddyTests";
+			productReference = 45A4ADABFAAFBF58F1D72B5DCDE0BF73 /* libPods-WeChatBuddyTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A336D972A58181FDB451CDE97E2C91FB /* OCMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78EE5E3282E014D782997BD2AEDBB3E7 /* Build configuration list for PBXNativeTarget "OCMock" */;
+			buildPhases = (
+				6C28BD54F63874DA43832E467057D6F8 /* Sources */,
+				FE914815CBC0C6171E6B9CFCCA60DF3B /* Frameworks */,
+				314C0F4AC13F7A3E22EF58F32659F4D0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-WeChatBuddyTests";
-			productName = "Pods-WeChatBuddyTests";
-			productReference = A8003DE58948A3D0B4C4FE9FA034A0EC /* Pods_WeChatBuddyTests.framework */;
-			productType = "com.apple.product-type.framework";
+			name = OCMock;
+			productName = OCMock;
+			productReference = C502BDAFF42926C885528DBA9F1D335F /* libOCMock.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -314,98 +504,176 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BA84416B19DF31967CCD7D02D962E49 /* Pods */,
-				6206BE08797D171BA71CEEC1C77B0F62 /* Pods-WeChatBuddy */,
-				7884E33E1EBDBDFE712ADA1B186C5766 /* Pods-WeChatBuddyTests */,
+				A336D972A58181FDB451CDE97E2C91FB /* OCMock */,
+				661279BE309B50D0FAB17038C4BAD89B /* Pods-WeChatBuddy */,
+				7FAECEE69D68005C06B8FE7BFD7C9745 /* Pods-WeChatBuddyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		94E92B28A5AF3478251705B46FC8586F /* Sources */ = {
+		6C28BD54F63874DA43832E467057D6F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E615E9CA3F7C983E82758A5B9F64D21 /* Pods-dummy.m in Sources */,
+				0DA3D512B9BBF4ACD2646C11503431E1 /* NSInvocation+OCMAdditions.m in Sources */,
+				5FF363E44C409998B4EE7EC5E0AC310C /* NSMethodSignature+OCMAdditions.m in Sources */,
+				AA6E5DFBBF83759255F8A4E793F1CD11 /* NSNotificationCenter+OCMAdditions.m in Sources */,
+				8B9AF1D177472A31BCCEFBDC009E1B06 /* NSObject+OCMAdditions.m in Sources */,
+				893B7EC2BA92038B1798DC4D8015B301 /* NSValue+OCMAdditions.m in Sources */,
+				AA0F79677BA0B0FACB46119BDB166157 /* OCClassMockObject.m in Sources */,
+				2C2A482BAFF716A130EDD3F5EE3F637F /* OCMArg.m in Sources */,
+				7591FEBF31FC0F5F2E07164D7370DDA1 /* OCMBlockCaller.m in Sources */,
+				74821FB4F57D1AA8B4B117153B154D63 /* OCMBoxedReturnValueProvider.m in Sources */,
+				A942B2F0F32A6E6FD64387CC48B068E4 /* OCMConstraint.m in Sources */,
+				B3F4E0205059D5B83A9531296B38A748 /* OCMExceptionReturnValueProvider.m in Sources */,
+				F477D1385F2F1FA0E54B98A319741B4F /* OCMExpectationRecorder.m in Sources */,
+				610B73BC15C8F3E0A6A717A722DF82D6 /* OCMFunctions.m in Sources */,
+				EAF33A6D76086FD30868D8C7A2BA09DB /* OCMIndirectReturnValueProvider.m in Sources */,
+				3B94D6780FA8225BA6A177BEC377C8E6 /* OCMInvocationExpectation.m in Sources */,
+				D8EDD1FBEB7C48F2CF3ACD5354A431BA /* OCMInvocationMatcher.m in Sources */,
+				480F50041B15EE0D7AFC9646E4B78DD4 /* OCMInvocationStub.m in Sources */,
+				3606B62FA3DCCA2DA0C79324BC5BC6E7 /* OCMLocation.m in Sources */,
+				D48B03D0439BB8181FF32001021CD7B8 /* OCMMacroState.m in Sources */,
+				CF78F10BA4EFF8F3006D434D1377BB2F /* OCMNotificationPoster.m in Sources */,
+				EDF21F37357A28B39D87497297FDE4E4 /* OCMObserverRecorder.m in Sources */,
+				08B857E0D271D351CD78643ACB3A93D3 /* OCMPassByRefSetter.m in Sources */,
+				923380A026F4BD23C187BD3409693075 /* OCMRealObjectForwarder.m in Sources */,
+				F0E8E10B1BE104B377A780D34856775E /* OCMRecorder.m in Sources */,
+				4AA0A082868BF3192C5E0FCA0ECFC7F7 /* OCMReturnValueProvider.m in Sources */,
+				B312A94A657AD6BA6752D61E4CDF12D7 /* OCMStubRecorder.m in Sources */,
+				043FECC6649F534BBC384FE275D410DF /* OCMVerifier.m in Sources */,
+				D6CACFFA62545A5323C9689759F72DCD /* OCMock-dummy.m in Sources */,
+				6539D6B1F670DD27C189049B38C50908 /* OCMockObject.m in Sources */,
+				52675D68F00BD36E51CD4CBB1976069A /* OCObserverMockObject.m in Sources */,
+				F6F56C5C425567744615AF331728D674 /* OCPartialMockObject.m in Sources */,
+				D74CFB534C69B95964B6B2BD6AA72555 /* OCProtocolMockObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA93D64FC744FAB19A2F7417CA977350 /* Sources */ = {
+		6EE31B2705F814FFB38337215DC37B99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36B169E614DF196E5E63D0589C5697A /* Pods-WeChatBuddy-dummy.m in Sources */,
+				07277E2F208B1E075F4DC6B5A44E26A4 /* Pods-WeChatBuddyTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C170BC44DD9A55B9E76E3A643FEA8BCA /* Sources */ = {
+		C577DE84372EEDFF06640E8DBDE98875 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E5B36A0C49FFEF344D1F27BCFD02087 /* Pods-WeChatBuddyTests-dummy.m in Sources */,
+				D9DBBCB1AED667DA977D8C995C4D413C /* Pods-WeChatBuddy-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		678F292844FC6E1A9E888A7E9B9321B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCMock;
+			target = A336D972A58181FDB451CDE97E2C91FB /* OCMock */;
+			targetProxy = 74DFF8DE566AAB52D57C781528612C7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		060D51FB92747EFCAFEE0FEDDDAB1454 /* Debug */ = {
+		081B79C6A95BE98062ACB17693BC8BF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74EA70FE625146B05FD779BF212C752F /* Pods.debug.xcconfig */;
+			baseConfigurationReference = CC814BFDDF210484BCFA01DF6521A965 /* Pods-WeChatBuddy.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7C4362FBCA751038E19421F489795063 /* Debug */ = {
+		0AD6AD42E7B9FB25112C9DCE3C23778B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1EA790EB1C8B1DA66D95AB9142D1AD5 /* Pods-WeChatBuddy.debug.xcconfig */;
+			baseConfigurationReference = 20AF672CCAAEBF605F04CFDEB6CB0063 /* Pods-WeChatBuddy.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-WeChatBuddy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-WeChatBuddy/Pods-WeChatBuddy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1A4CEC8FDEA716A65275FCD595B21EA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31DB2DF29A24601F2C2A1E66E97B29DE /* OCMock-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		21FBE69E533D6FE0E5B2EB8A1EF78530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31DB2DF29A24601F2C2A1E66E97B29DE /* OCMock-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCMock/OCMock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		53E9FA1B7EA8EB8E004B800C2A3A7737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB65F61ED310360EE39F4354B743509 /* Pods-WeChatBuddyTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_WeChatBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		5F0E568F7B7E780E25C36D7FF35D871C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C429616574B818D0B9045BB964EDEE /* Pods-WeChatBuddyTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -446,122 +714,6 @@
 			};
 			name = Debug;
 		};
-		BDB46073F6421D64E116464328DD7A2D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68D6E7B3B326A240AAB038974DA0CA42 /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D45D59BE68435651CA7222A5A62CBA8D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D450319E96F2E57FCE566612AAB4DB4 /* Pods-WeChatBuddy.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-WeChatBuddy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-WeChatBuddy/Pods-WeChatBuddy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_WeChatBuddy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DEAAA7C18F540A977C20F194CC4F0FD9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F0D27D1777F12E0AC3E3A30C18071F2 /* Pods-WeChatBuddyTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-WeChatBuddyTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-WeChatBuddyTests/Pods-WeChatBuddyTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_WeChatBuddyTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E2BC13406CBB47D95E37E172354E6A53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59F7721CE9134EA52A96204B60CA9205 /* Pods-WeChatBuddyTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-WeChatBuddyTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-WeChatBuddyTests/Pods-WeChatBuddyTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_WeChatBuddyTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -599,6 +751,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		177D830CEA5C796983FC29FA2AF554A4 /* Build configuration list for PBXNativeTarget "Pods-WeChatBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081B79C6A95BE98062ACB17693BC8BF5 /* Debug */,
+				0AD6AD42E7B9FB25112C9DCE3C23778B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -608,29 +769,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F8A78042F262247E6E9656B381F9730 /* Build configuration list for PBXNativeTarget "Pods-WeChatBuddyTests" */ = {
+		78EE5E3282E014D782997BD2AEDBB3E7 /* Build configuration list for PBXNativeTarget "OCMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2BC13406CBB47D95E37E172354E6A53 /* Debug */,
-				DEAAA7C18F540A977C20F194CC4F0FD9 /* Release */,
+				1A4CEC8FDEA716A65275FCD595B21EA5 /* Debug */,
+				21FBE69E533D6FE0E5B2EB8A1EF78530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4242677759212B32FFA2805E9EEEE1A /* Build configuration list for PBXNativeTarget "Pods-WeChatBuddy" */ = {
+		9FC4F14A0E5C2B1B28E8038657C8CEE4 /* Build configuration list for PBXNativeTarget "Pods-WeChatBuddyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C4362FBCA751038E19421F489795063 /* Debug */,
-				D45D59BE68435651CA7222A5A62CBA8D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E151796BBCB376D96AD1C38DD0B21AC6 /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				060D51FB92747EFCAFEE0FEDDDAB1454 /* Debug */,
-				BDB46073F6421D64E116464328DD7A2D /* Release */,
+				53E9FA1B7EA8EB8E004B800C2A3A7737 /* Debug */,
+				5F0E568F7B7E780E25C36D7FF35D871C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
