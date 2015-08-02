@@ -4,6 +4,7 @@ xcodeproj 'WeChatBuddy'
 
 target 'WeChatBuddy' do
   pod 'PebbleKit'
+  pod 'ZXingObjC', '~> 3.0'
 end
 
 target 'WeChatBuddyTests' do

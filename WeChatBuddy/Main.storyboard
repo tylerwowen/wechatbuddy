@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" promptedForUpgradeToXcode5="NO" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tb4-16-R6K">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tb4-16-R6K">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
                                     <barButtonItem title="Photo Library" id="8s3-HW-Fm1">
@@ -33,13 +33,13 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-Yu-f9x">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-Yu-f9x">
                                 <rect key="frame" x="40" y="164" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="Bfc-Qe-r6h">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="240"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="144"/>
                                     </constraint>
-                                    <constraint firstAttribute="width" secondItem="9cY-Yu-f9x" secondAttribute="height" multiplier="561:785" id="Vcn-tk-9gc"/>
+                                    <constraint firstAttribute="width" secondItem="9cY-Yu-f9x" secondAttribute="height" multiplier="1:1" id="Vcn-tk-9gc"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -54,10 +54,38 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAl-Pd-Crl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9Pe-bc-4g1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Pe-bc-4g1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="9Pe-bc-4g1"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9cY-Yu-f9x" firstAttribute="trailing" secondItem="qAl-Pd-Crl" secondAttribute="trailing" constant="23" id="CtK-IW-v8P">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-50"/>
+                            </constraint>
+                            <constraint firstItem="9cY-Yu-f9x" firstAttribute="top" secondItem="qAl-Pd-Crl" secondAttribute="bottom" constant="22" id="Pe7-RG-CxD">
+                                <variation key="heightClass=regular-widthClass=compact" constant="18"/>
+                            </constraint>
                             <constraint firstAttribute="centerX" secondItem="9cY-Yu-f9x" secondAttribute="centerX" id="Q5X-0L-eBx"/>
+                            <constraint firstItem="9cY-Yu-f9x" firstAttribute="leading" secondItem="qAl-Pd-Crl" secondAttribute="leading" constant="-50" id="acF-tl-Ghv">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint firstItem="9cY-Yu-f9x" firstAttribute="centerX" secondItem="tb4-16-R6K" secondAttribute="centerX" id="g12-De-Fnm"/>
                             <constraint firstItem="tb4-16-R6K" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="kSi-21-ERN"/>
                             <constraint firstItem="9cY-Yu-f9x" firstAttribute="top" secondItem="RPb-aq-krx" secondAttribute="bottom" constant="144" id="oGH-gf-eKg"/>
@@ -65,8 +93,14 @@
                             <constraint firstAttribute="centerY" secondItem="9cY-Yu-f9x" secondAttribute="centerY" id="u0f-f1-VFW"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="qAl-Pd-Crl"/>
+                            </mask>
                             <mask key="constraints">
+                                <exclude reference="CtK-IW-v8P"/>
+                                <exclude reference="Pe7-RG-CxD"/>
                                 <exclude reference="Q5X-0L-eBx"/>
+                                <exclude reference="acF-tl-Ghv"/>
                                 <exclude reference="g12-De-Fnm"/>
                                 <exclude reference="oGH-gf-eKg"/>
                                 <exclude reference="u0f-f1-VFW"/>
@@ -75,8 +109,14 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="qAl-Pd-Crl"/>
+                            </mask>
                             <mask key="constraints">
+                                <include reference="CtK-IW-v8P"/>
+                                <include reference="Pe7-RG-CxD"/>
                                 <include reference="Q5X-0L-eBx"/>
+                                <include reference="acF-tl-Ghv"/>
                                 <include reference="g12-De-Fnm"/>
                                 <exclude reference="oGH-gf-eKg"/>
                                 <include reference="u0f-f1-VFW"/>
@@ -90,12 +130,13 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="imageView" destination="9cY-Yu-f9x" id="jUN-7H-XVG"/>
+                        <outlet property="statusLabel" destination="qAl-Pd-Crl" id="J3L-Yx-1A3"/>
                         <outlet property="toolBar" destination="tb4-16-R6K" id="T6W-v5-Lcu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104.375" y="122.53521126760563"/>
+            <point key="canvasLocation" x="1104" y="122.25"/>
         </scene>
     </scenes>
 </document>

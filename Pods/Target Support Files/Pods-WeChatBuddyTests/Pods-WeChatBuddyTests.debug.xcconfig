@@ -1,5 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OCMock" "${PODS_ROOT}/Headers/Public/PebbleKit" "${PODS_ROOT}/Headers/Public/PebbleKit/PebbleKit" "${PODS_ROOT}/Headers/Public/PebbleKit/PebbleVendor"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/OCMock" -isystem "${PODS_ROOT}/Headers/Public/PebbleKit" -isystem "${PODS_ROOT}/Headers/Public/PebbleKit/PebbleKit" -isystem "${PODS_ROOT}/Headers/Public/PebbleKit/PebbleVendor"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/OCMock" "${PODS_ROOT}/Headers/Public/PebbleKit" "${PODS_ROOT}/Headers/Public/PebbleKit/PebbleKit" "${PODS_ROOT}/Headers/Public/PebbleKit/PebbleVendor" "${PODS_ROOT}/Headers/Public/ZXingObjC"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/OCMock" -isystem "${PODS_ROOT}/Headers/Public/PebbleKit" -isystem "${PODS_ROOT}/Headers/Public/PebbleKit/PebbleKit" -isystem "${PODS_ROOT}/Headers/Public/PebbleKit/PebbleVendor" -isystem "${PODS_ROOT}/Headers/Public/ZXingObjC"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"OCMock"
 PODS_ROOT = ${SRCROOT}/Pods

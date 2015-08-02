@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F43E5FA1B6E0B4800D0A740 /* QRCodeRegenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */; };
 		2F63BFB11B6C7CD6000A7F41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63BFB01B6C7CD6000A7F41 /* main.m */; };
 		2F63BFB41B6C7CD6000A7F41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63BFB31B6C7CD6000A7F41 /* AppDelegate.m */; };
 		2F63BFB71B6C7CD6000A7F41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63BFB61B6C7CD6000A7F41 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F43E5F21B6E07B800D0A740 /* QRCodeRegenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeRegenerator.h; sourceTree = "<group>"; };
+		2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeRegenerator.m; sourceTree = "<group>"; };
 		2F63BFAB1B6C7CD6000A7F41 /* WeChatBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F63BFAF1B6C7CD6000A7F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F63BFB01B6C7CD6000A7F41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,9 +100,9 @@
 				2F63BFB31B6C7CD6000A7F41 /* AppDelegate.m */,
 				2F63BFB51B6C7CD6000A7F41 /* ViewController.h */,
 				2F63BFB61B6C7CD6000A7F41 /* ViewController.m */,
-				2F63BFD41B6C8B52000A7F41 /* Main.storyboard */,
-				2F63BFBB1B6C7CD6000A7F41 /* Images.xcassets */,
-				2F63BFBD1B6C7CD6000A7F41 /* LaunchScreen.xib */,
+				2F43E5F21B6E07B800D0A740 /* QRCodeRegenerator.h */,
+				2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */,
+				2FFE7BFB1B6E845D002D7579 /* Resources */,
 				2F63BFAE1B6C7CD6000A7F41 /* Supporting Files */,
 			);
 			path = WeChatBuddy;
@@ -129,6 +132,16 @@
 				2F63BFC91B6C7CD6000A7F41 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FFE7BFB1B6E845D002D7579 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F63BFD41B6C8B52000A7F41 /* Main.storyboard */,
+				2F63BFBB1B6C7CD6000A7F41 /* Images.xcassets */,
+				2F63BFBD1B6C7CD6000A7F41 /* LaunchScreen.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E0C6B37436BD606FBBCF8F92 /* Frameworks */ = {
@@ -321,6 +334,7 @@
 			files = (
 				2F63BFB71B6C7CD6000A7F41 /* ViewController.m in Sources */,
 				2F63BFB41B6C7CD6000A7F41 /* AppDelegate.m in Sources */,
+				2F43E5FA1B6E0B4800D0A740 /* QRCodeRegenerator.m in Sources */,
 				2F63BFB11B6C7CD6000A7F41 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = WeChatBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = WeChatBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

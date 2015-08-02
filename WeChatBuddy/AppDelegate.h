@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Tyler. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+
 #import <PebbleKit/PebbleKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
