@@ -65,8 +65,8 @@
   ZXQRCodeWriter *writer = [[ZXQRCodeWriter alloc] init];
   ZXBitMatrix *result = [writer encode:_data
                                 format:kBarcodeFormatQRCode
-                                 width:144
-                                height:144
+                                 width:116
+                                height:116
                                  error:&error];
   
   if (result) {

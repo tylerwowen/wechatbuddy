@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "PebbleImgafeTransmitter.h"
 #import "QRCodeRegenerator.h"
 #import "ViewController.h"
 
-//NSNumber *keyData = @(5);
 
 @interface ViewController ()
 
@@ -43,12 +43,6 @@
   }
   
 }
-
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
-}
-
 
 - (IBAction)showImagePickerForCamera:(id)sender {
   [self showImagePickerForSourceType:UIImagePickerControllerSourceTypeCamera];
@@ -90,6 +84,15 @@
   [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
+- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
+  
+  UIGraphicsBeginImageContextWithOptions(newSize, NO, 1.0);
+  [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+  UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+  UIGraphicsEndImageContext();
+  return newImage;
+}
+
 - (void)finishAndUpdate {
   [self dismissViewControllerAnimated:YES completion:NULL];
   
@@ -102,29 +105,19 @@
   self.imagePickerController = nil;
 }
 
-- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
-
-  UIGraphicsBeginImageContextWithOptions(newSize, NO, 1.0);
-  [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-  UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-  UIGraphicsEndImageContext();
-  return newImage;
-}
-
 #pragma mark - Pebble App Message
 
 - (void)sendBitmapToPebble {
   
-  NSDictionary *message = @{ @(0): self.bitmap};
-  [self.watch appMessagesPushUpdate:message onSent:^(PBWatch *watch, NSDictionary *update, NSError *error) {
-    if (!error) {
-      self.statusLabel.text = @"Cool, the QR code was uploaded!";
-    }
-    else {
-      self.statusLabel.text = @"Oops, failed to send to pebble.";
-      NSLog(@"Error sending message: %@", error);
-    }
-  }];
+  PebbleImgafeTransmitter *uploader = [[PebbleImgafeTransmitter alloc]init];
+  NSError *error= [uploader sendBitmapToPebble:self.bitmap];
+  
+  if (!error) {
+    self.statusLabel.text = @"Cool, the QR code was uploaded!";
+  }
+  else {
+    self.statusLabel.text = @"Oops, failed to send to pebble.";
+  }
 }
 
 #pragma mark - Process Image
