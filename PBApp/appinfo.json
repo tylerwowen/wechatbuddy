@@ -1,0 +1,22 @@
+{
+  "uuid": "043fe8a1-70df-403b-a7bb-3338db1fa55f",
+  "shortName": "wechatbuddy_pb",
+  "longName": "wechatbuddy_pb",
+  "companyName": "Tyler O",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt"],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "IOSDL_DATA": 100,
+    "IOSDL_BEGIN": 101,
+    "IOSDL_END": 102,
+    "IOSDL_CHUNK_SIZE": 103,
+    "IOSDL_URL": 104
+  },
+  "resources": {
+    "media": []
+  }
+}
