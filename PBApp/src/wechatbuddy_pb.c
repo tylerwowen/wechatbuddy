@@ -12,6 +12,18 @@ static GRect bounds;
 static size_t persistDataSize;
 
 static void presentQRCodeWithData(uint8_t *data) {
+
+  if (bitmap_layer != NULL)
+    bitmap_layer_set_bitmap(bitmap_layer, NULL);
+  if (text_layer != NULL) {
+    text_layer_destroy(text_layer);
+    text_layer = NULL;
+  }
+  if (bitmap != NULL) {
+    printf("destroy bitmap");
+    gbitmap_destroy(bitmap);
+  }
+
   GSize gsize = GSize(116, 116);
   bitmap = gbitmap_create_blank(gsize, GBitmapFormat1Bit);
   free(gbitmap_get_data(bitmap));
@@ -63,8 +75,8 @@ static void window_load(Window *window) {
   }
   else {
     // Text layer
-    text_layer = text_layer_create((GRect) { .origin = { 0, 72 }, .size = { bounds.size.w, 40 } });
-    text_layer_set_text(text_layer, "Please use the iOS app to transfer your QR code");
+    text_layer = text_layer_create((GRect) { .origin = { 0, 56 }, .size = { bounds.size.w, 60 } });
+    text_layer_set_text(text_layer, "Please use the iOS application to transfer your QR code");
     text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
     layer_add_child(window_layer, text_layer_get_layer(text_layer));
 
@@ -74,7 +86,8 @@ static void window_load(Window *window) {
 }
 
 static void window_unload(Window *window) {
-  text_layer_destroy(text_layer);
+  if (text_layer != NULL)
+    text_layer_destroy(text_layer);
   gbitmap_destroy(bitmap);
   bitmap_layer_destroy(bitmap_layer);
 }
@@ -83,14 +96,10 @@ void download_complete_handler(iOSDownload *download) {
   printf("Loaded QR code with %lu bytes", download->length);
   printf("Heap free is %u bytes", heap_bytes_free());
 
-  if (bitmap != NULL) {
-    printf("destroy bitmap");
-    gbitmap_destroy(bitmap);
-  }
   persistDataSize = download->length;
   presentQRCodeWithData(download->data);
   savePersistData();
-  
+
   download->data = NULL;
   iOSdownload_destroy(download);
 }
