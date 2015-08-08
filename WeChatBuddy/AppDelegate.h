@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 Tyler. All rights reserved.
 //
 
-@import UIKit;
-
 #import <PebbleKit/PebbleKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
@@ -17,4 +15,3 @@
 - (PBWatch *)getConnectedWatch;
 
 @end
-

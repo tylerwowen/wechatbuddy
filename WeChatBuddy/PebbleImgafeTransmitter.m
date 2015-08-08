@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PebbleImgafeTransmitter.h"
+#import "MainViewController.h"
 
 /* The key used to transmit download data. Contains byte array. */
 #define IOSDL_DATA @(100)
@@ -23,6 +24,12 @@
 // TODO: Check if this can base on pebble modles
 #define MAX_OUTGOING_SIZE 120
 
+@interface PebbleImgafeTransmitter ()
+
+@property (nonatomic) MainViewController *viewController;
+
+@end
+
 @implementation PebbleImgafeTransmitter {
   
   NSError *error;
@@ -31,13 +38,14 @@
   
   NSInteger currentIndex;
 }
-// TODO: reconsider return type
-- (NSError*)sendBitmapToPebble:(PBBitmap*)bitmap{
+
+- (void)sendBitmapToPebble:(PBBitmap*)bitmap{
   
+  self.viewController = (MainViewController *)[[[UIApplication sharedApplication].delegate window] rootViewController];
   
   if (!bitmap) {
+   
     error = [NSError errorWithDomain:@"com.wechatbuddy" code:2101 userInfo:@{@2101:@"empty bitmap"}] ;
-    
   }
   
   AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
@@ -48,9 +56,9 @@
   
   [self makeSmallPackages:bitmap];
   [self sendPackages];
-  
-  return error;
 }
+
+#pragma mark - helpers
 
 - (void)makeSmallPackages:(PBBitmap *)bitmap {
   
@@ -71,18 +79,21 @@
   [packages addObject:@{IOSDL_END: @""}];
 }
 
-#pragma mark - helpers
 
 - (void)sendPackages {
+  
+  [self.viewController showProgress];
+  [self.viewController setPercentageWithTransferedPacakges:0 total:(unsigned int)[packages count]];
   
   [watch appMessagesPushUpdate:[packages objectAtIndex:currentIndex] onSent:^(PBWatch *watch, NSDictionary *update, NSError *apmerror) {
     
     if (!apmerror) {
-      NSLog(@"Successfully sent message no.%ld", (long)currentIndex);
+      
       if (currentIndex < [packages count] - 1) {
         
         currentIndex++;
-        [self recursiveSendAppMessage];
+        [self.viewController setPercentageWithTransferedPacakges:(unsigned int)currentIndex total:(unsigned int)[packages count]];
+        [self recursivelySendAppMessage];
       }
     }
     else {
@@ -90,11 +101,9 @@
       error = apmerror;
     }
   }];
-  
-  //packages = nil;
 }
 
-- (void)recursiveSendAppMessage {
+- (void)recursivelySendAppMessage {
   
   [watch appMessagesPushUpdate:[packages objectAtIndex:currentIndex] onSent:^(PBWatch *watch, NSDictionary *update, NSError *apmerror) {
     
@@ -103,14 +112,19 @@
       if (currentIndex < [packages count] - 1) {
         
         currentIndex++;
-        [self recursiveSendAppMessage];
+        [self.viewController setPercentageWithTransferedPacakges:(unsigned int)currentIndex total:(unsigned int)[packages count]];
+        [self recursivelySendAppMessage];
       }
       else{
+        [self.viewController setPercentageWithTransferedPacakges:1 total:1];
         packages = nil;
+        self.viewController = nil;
       }
     }
     else {
       NSLog(@"Error sending message at index: %ld", (long)currentIndex);
+      packages = nil;
+      self.viewController = nil;
       return;
     }
   }];

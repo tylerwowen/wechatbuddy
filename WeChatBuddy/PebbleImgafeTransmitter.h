@@ -12,6 +12,6 @@
 
 @interface PebbleImgafeTransmitter : NSObject
 
-- (NSError*)sendBitmapToPebble:(PBBitmap*)bitmap;
+- (void)sendBitmapToPebble:(PBBitmap*)bitmap;
 
 @end

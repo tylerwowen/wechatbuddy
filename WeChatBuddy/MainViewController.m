@@ -9,10 +9,10 @@
 #import "AppDelegate.h"
 #import "PebbleImgafeTransmitter.h"
 #import "QRCodeRegenerator.h"
-#import "ViewController.h"
+#import "MainViewController.h"
 
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @property (nonatomic, weak) IBOutlet UILabel *statusLabel;
@@ -21,12 +21,13 @@
 @property (nonatomic) UIImagePickerController *imagePickerController;
 @property (nonatomic) UIImage *QRCode;
 @property (nonatomic) PBBitmap *bitmap;
+@property (nonatomic) float percentage;
 
 @property PBWatch *watch;
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
@@ -42,6 +43,8 @@
     [self.toolBar setItems:toolbarItems animated:NO];
   }
   
+  // Progress
+  self.percentage = 0;
 }
 
 - (IBAction)showImagePickerForCamera:(id)sender {
@@ -110,14 +113,14 @@
 - (void)sendBitmapToPebble {
   
   PebbleImgafeTransmitter *uploader = [[PebbleImgafeTransmitter alloc]init];
-  NSError *error= [uploader sendBitmapToPebble:self.bitmap];
+  [uploader sendBitmapToPebble:self.bitmap];
   
-  if (!error) {
-    self.statusLabel.text = @"Cool, the QR code was uploaded!";
-  }
-  else {
-    self.statusLabel.text = @"Oops, failed to send to pebble.";
-  }
+//  if (!error) {
+//    self.statusLabel.text = @"Cool, the QR code was uploaded!";
+//  }
+//  else {
+//    self.statusLabel.text = @"Oops, failed to send to pebble.";
+//  }
 }
 
 #pragma mark - Process Image
@@ -140,6 +143,34 @@
   self.bitmap = [PBBitmap pebbleBitmapWithUIImage:self.QRCode];
 }
 
+#pragma mark - Progress View
+
+- (void)setPercentageWithTransferedPacakges:(unsigned int)transfered total:(unsigned int)total {
+  
+  self.percentage = (float)transfered / (float)total;
+  BOOL animated = self.percentage != 0;
+  
+  [self.progressView setProgress:self.percentage animated:animated];
+  self.progressLabel.text = [NSString stringWithFormat:@"%d%%", (int)(self.percentage * 100)];
+}
+
+- (void)hideProgress {
+  
+  self.progressView.hidden = YES;
+  self.progressLabel.hidden = YES;
+}
+
+- (void)showProgress {
+  
+  self.progressView.hidden = NO;
+  self.progressLabel.hidden = NO;
+}
+
+#pragma mark - Unwind
+
+- (IBAction)unwindToMain:(UIStoryboardSegue*)sender {
+
+}
 
 @end
 
