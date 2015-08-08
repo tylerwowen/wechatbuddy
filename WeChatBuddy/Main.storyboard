@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -15,25 +14,30 @@
                         <viewControllerLayoutGuide type="top" id="RPb-aq-krx"/>
                         <viewControllerLayoutGuide type="bottom" id="AiX-X2-HEs"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tb4-16-R6K">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.69999999999999996" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb4-16-R6K">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
                                     <barButtonItem title="Photo Library" id="8s3-HW-Fm1">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="showImagePickerForPhotoPicker:" destination="2" id="V8M-uu-FeV"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="F5A-sA-wKN"/>
                                     <barButtonItem systemItem="camera" id="j6p-xq-OTQ">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <action selector="showImagePickerForCamera:" destination="2" id="V6H-XD-A0E"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-Yu-f9x">
                                 <rect key="frame" x="0.0" y="-64" width="0.0" height="0.0"/>
@@ -61,8 +65,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="9Pe-bc-4g1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -78,15 +82,15 @@
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb6-9u-pRg">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-tL-lnx">
                                 <rect key="frame" x="0.0" y="-2" width="150" height="2"/>
-                                <color key="backgroundColor" red="0.99607843137254903" green="0.792156862745098" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.14117647058823529" green="0.44313725490196076" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="progressTintColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="trackTintColor" red="0.14117647059999999" green="0.4431372549" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="trackTintColor" red="0.094117647060000004" green="0.4549019608" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeChat Buddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohV-um-IHm">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -94,8 +98,8 @@
                                     <constraint firstAttribute="width" constant="150" id="ISt-0r-Qyg"/>
                                     <constraint firstAttribute="height" constant="44" id="JrZ-XS-t5M"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="23"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -114,14 +118,15 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                 <state key="normal" title="About this app">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Zlr-or-uJ8" kind="modal" id="Yr7-tw-2dK"/>
+                                    <segue destination="Zlr-or-uJ8" kind="show" id="Yr7-tw-2dK"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.41960784309999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="ohV-um-IHm" secondAttribute="centerX" id="1Q1-B8-zrh"/>
                             <constraint firstItem="AiX-X2-HEs" firstAttribute="top" secondItem="VaY-Ly-W97" secondAttribute="bottom" constant="100" id="6pt-Jh-WY5"/>
@@ -220,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="1104" y="122.25"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="KPY-0L-cMP">
             <objects>
-                <viewController id="Zlr-or-uJ8" sceneMemberID="viewController">
+                <viewController id="Zlr-or-uJ8" customClass="AboutViewController" customModule="WeChatBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dfC-UT-0sE"/>
                         <viewControllerLayoutGuide type="bottom" id="IDt-sq-vJ7"/>
@@ -232,78 +237,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5g-Om-4YP">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="About" id="d0w-rb-o9E">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="orK-hd-i9O">
-                                            <connections>
-                                                <segue destination="ba8-yM-euk" kind="unwind" unwindAction="unwindToMain:" id="FlV-tq-sXe"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Yn3-Hq-uZ0"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <webView contentMode="scaleToFill" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-IA-ABL">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.5" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbR-ez-69D">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <barButtonItem enabled="NO" systemItem="rewind" id="2kw-hK-kt5">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EgN-Bh-b3G"/>
+                                    <barButtonItem enabled="NO" systemItem="action" id="fuo-Nt-Tld">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="939-hH-E0L"/>
+                                    <barButtonItem systemItem="done" id="0Hw-ql-ra1">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="ba8-yM-euk" kind="unwind" unwindAction="unwindToMain:" id="NO0-8m-YVn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="x3T-IA-ABL" firstAttribute="trailing" secondItem="U5g-Om-4YP" secondAttribute="trailing" id="LZ5-d3-yN9"/>
-                            <constraint firstItem="x3T-IA-ABL" firstAttribute="leading" secondItem="U5g-Om-4YP" secondAttribute="leading" id="ROI-mm-bMP"/>
-                            <constraint firstAttribute="trailing" secondItem="U5g-Om-4YP" secondAttribute="trailing" id="WpE-HZ-TWD"/>
-                            <constraint firstItem="x3T-IA-ABL" firstAttribute="top" secondItem="U5g-Om-4YP" secondAttribute="bottom" id="rl6-w3-ofy"/>
-                            <constraint firstItem="U5g-Om-4YP" firstAttribute="leading" secondItem="p0v-7R-Xqk" secondAttribute="leading" id="tZp-PR-0gB"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="x3T-IA-ABL" secondAttribute="bottom" constant="-5" id="vD7-tz-ZVb"/>
-                            <constraint firstItem="U5g-Om-4YP" firstAttribute="top" secondItem="dfC-UT-0sE" secondAttribute="bottom" id="vLz-r5-9xc"/>
+                            <constraint firstItem="hbR-ez-69D" firstAttribute="leading" secondItem="x3T-IA-ABL" secondAttribute="leading" id="8vn-2G-Pcj"/>
+                            <constraint firstItem="hbR-ez-69D" firstAttribute="top" secondItem="x3T-IA-ABL" secondAttribute="bottom" id="93L-Id-kuq"/>
+                            <constraint firstAttribute="trailing" secondItem="x3T-IA-ABL" secondAttribute="trailing" id="PbI-tH-oth"/>
+                            <constraint firstItem="hbR-ez-69D" firstAttribute="trailing" secondItem="x3T-IA-ABL" secondAttribute="trailing" id="U3w-YW-isx"/>
+                            <constraint firstItem="IDt-sq-vJ7" firstAttribute="top" secondItem="x3T-IA-ABL" secondAttribute="bottom" constant="39" id="WUO-DB-5t4"/>
+                            <constraint firstItem="x3T-IA-ABL" firstAttribute="leading" secondItem="p0v-7R-Xqk" secondAttribute="leading" id="b5h-MS-gi7"/>
+                            <constraint firstItem="x3T-IA-ABL" firstAttribute="top" secondItem="dfC-UT-0sE" secondAttribute="bottom" id="kaG-yZ-qpm"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="hbR-ez-69D" secondAttribute="bottom" constant="-5" id="yhd-Uu-aMe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="U5g-Om-4YP"/>
                                 <exclude reference="x3T-IA-ABL"/>
+                                <exclude reference="hbR-ez-69D"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="WpE-HZ-TWD"/>
-                                <exclude reference="tZp-PR-0gB"/>
-                                <exclude reference="vLz-r5-9xc"/>
-                                <exclude reference="LZ5-d3-yN9"/>
-                                <exclude reference="ROI-mm-bMP"/>
-                                <exclude reference="rl6-w3-ofy"/>
-                                <exclude reference="vD7-tz-ZVb"/>
+                                <exclude reference="PbI-tH-oth"/>
+                                <exclude reference="b5h-MS-gi7"/>
+                                <exclude reference="kaG-yZ-qpm"/>
+                                <exclude reference="8vn-2G-Pcj"/>
+                                <exclude reference="93L-Id-kuq"/>
+                                <exclude reference="U3w-YW-isx"/>
+                                <exclude reference="yhd-Uu-aMe"/>
+                                <exclude reference="WUO-DB-5t4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="U5g-Om-4YP"/>
                                 <include reference="x3T-IA-ABL"/>
+                                <include reference="hbR-ez-69D"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="WpE-HZ-TWD"/>
-                                <include reference="tZp-PR-0gB"/>
-                                <include reference="vLz-r5-9xc"/>
-                                <include reference="LZ5-d3-yN9"/>
-                                <include reference="ROI-mm-bMP"/>
-                                <include reference="rl6-w3-ofy"/>
-                                <include reference="vD7-tz-ZVb"/>
+                                <include reference="PbI-tH-oth"/>
+                                <include reference="b5h-MS-gi7"/>
+                                <include reference="kaG-yZ-qpm"/>
+                                <include reference="8vn-2G-Pcj"/>
+                                <include reference="93L-Id-kuq"/>
+                                <include reference="U3w-YW-isx"/>
+                                <include reference="yhd-Uu-aMe"/>
+                                <exclude reference="WUO-DB-5t4"/>
                             </mask>
                         </variation>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="gTc-rG-WPj" appends="YES" id="jid-vz-Ath"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="W89-ps-coD"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
+                    <connections>
+                        <outlet property="webView" destination="x3T-IA-ABL" id="RXz-yn-3Gt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKW-Fz-2AD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ba8-yM-euk" userLabel="Exit" sceneMemberID="exit"/>
-                <swipeGestureRecognizer direction="right" id="gTc-rG-WPj"/>
             </objects>
             <point key="canvasLocation" x="1899" y="122.25"/>
         </scene>

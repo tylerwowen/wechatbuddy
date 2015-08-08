@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "GradientBackgroundSetter.h"
 #import "PebbleImgafeTransmitter.h"
 #import "QRCodeRegenerator.h"
 #import "MainViewController.h"
-
 
 @interface MainViewController ()
 
@@ -32,6 +32,9 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
+  // Appearance
+  [GradientBackgroundSetter setBackgrooundColorForView:self.view];
+  
   // Get reference to watch
   AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
   self.watch = [delegate getConnectedWatch];
@@ -45,6 +48,22 @@
   
   // Progress
   self.percentage = 0;
+  
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:YES];
+  if ([[PBPebbleCentral defaultCentral] isMobileAppInstalled]) {
+    [self.watch appMessagesLaunch:^(PBWatch *watch, NSError *error) {
+      if (!error) {
+        NSLog(@"Successfully launched app.");
+      }
+      else {
+        NSLog(@"Error launching app - Error: %@", error);
+      }
+    }
+     ];
+  }
 }
 
 - (IBAction)showImagePickerForCamera:(id)sender {
@@ -114,13 +133,6 @@
   
   PebbleImgafeTransmitter *uploader = [[PebbleImgafeTransmitter alloc]init];
   [uploader sendBitmapToPebble:self.bitmap];
-  
-//  if (!error) {
-//    self.statusLabel.text = @"Cool, the QR code was uploaded!";
-//  }
-//  else {
-//    self.statusLabel.text = @"Oops, failed to send to pebble.";
-//  }
 }
 
 #pragma mark - Process Image
@@ -169,7 +181,20 @@
 #pragma mark - Unwind
 
 - (IBAction)unwindToMain:(UIStoryboardSegue*)sender {
+  
+}
 
+#pragma mark - Status
+- (void)setStatusLabelToSuccess {
+  self.statusLabel.text = @"Success! Now you can use you Pebble App only.";
+}
+
+- (void)setStatusLabelToFail {
+  self.statusLabel.text = @"Failed to send the QR code. Please try again.";
+}
+
+- (void)setStatusLabelToInProgress {
+  self.statusLabel.text = @"Sending...";
 }
 
 @end

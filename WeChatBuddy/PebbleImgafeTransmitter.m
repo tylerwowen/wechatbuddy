@@ -83,6 +83,7 @@
 - (void)sendPackages {
   
   [self.viewController showProgress];
+  [self.viewController setStatusLabelToInProgress];
   [self.viewController setPercentageWithTransferedPacakges:0 total:(unsigned int)[packages count]];
   
   [watch appMessagesPushUpdate:[packages objectAtIndex:currentIndex] onSent:^(PBWatch *watch, NSDictionary *update, NSError *apmerror) {
@@ -98,6 +99,7 @@
     }
     else {
       NSLog(@"Error sending message at index: %ld", (long)currentIndex);
+      [self.viewController setStatusLabelToFail];
       error = apmerror;
     }
   }];
@@ -117,12 +119,14 @@
       }
       else{
         [self.viewController setPercentageWithTransferedPacakges:1 total:1];
+        [self.viewController setStatusLabelToSuccess];
         packages = nil;
         self.viewController = nil;
       }
     }
     else {
       NSLog(@"Error sending message at index: %ld", (long)currentIndex);
+      [self.viewController setStatusLabelToFail];
       packages = nil;
       self.viewController = nil;
       return;
