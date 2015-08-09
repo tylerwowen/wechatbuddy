@@ -22,4 +22,7 @@ class AboutViewController: UIViewController {
     webView.loadRequest(URLReq)
   }
   
+  @IBAction func goBackButton(sender: UIBarButtonItem) {
+    webView.goBack()
+  }
 }

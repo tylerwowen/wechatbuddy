@@ -246,8 +246,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <barButtonItem enabled="NO" systemItem="rewind" id="2kw-hK-kt5">
+                                    <barButtonItem systemItem="rewind" id="2kw-hK-kt5">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="goBackButton:" destination="Zlr-or-uJ8" id="QOP-mo-99O"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="EgN-Bh-b3G"/>
                                     <barButtonItem enabled="NO" systemItem="action" id="fuo-Nt-Tld">
