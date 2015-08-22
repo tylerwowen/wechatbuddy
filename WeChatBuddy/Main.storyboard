@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -253,8 +254,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="EgN-Bh-b3G"/>
-                                    <barButtonItem enabled="NO" systemItem="action" id="fuo-Nt-Tld">
+                                    <barButtonItem systemItem="action" id="fuo-Nt-Tld">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="share:" destination="Zlr-or-uJ8" id="LO6-9N-TAv"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="939-hH-E0L"/>
                                     <barButtonItem systemItem="done" id="0Hw-ql-ra1">
@@ -286,14 +290,14 @@
                                 <exclude reference="hbR-ez-69D"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="PbI-tH-oth"/>
-                                <exclude reference="b5h-MS-gi7"/>
-                                <exclude reference="kaG-yZ-qpm"/>
+                                <exclude reference="WUO-DB-5t4"/>
                                 <exclude reference="8vn-2G-Pcj"/>
                                 <exclude reference="93L-Id-kuq"/>
                                 <exclude reference="U3w-YW-isx"/>
                                 <exclude reference="yhd-Uu-aMe"/>
-                                <exclude reference="WUO-DB-5t4"/>
+                                <exclude reference="PbI-tH-oth"/>
+                                <exclude reference="b5h-MS-gi7"/>
+                                <exclude reference="kaG-yZ-qpm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -302,14 +306,14 @@
                                 <include reference="hbR-ez-69D"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PbI-tH-oth"/>
-                                <include reference="b5h-MS-gi7"/>
-                                <include reference="kaG-yZ-qpm"/>
+                                <exclude reference="WUO-DB-5t4"/>
                                 <include reference="8vn-2G-Pcj"/>
                                 <include reference="93L-Id-kuq"/>
                                 <include reference="U3w-YW-isx"/>
                                 <include reference="yhd-Uu-aMe"/>
-                                <exclude reference="WUO-DB-5t4"/>
+                                <include reference="PbI-tH-oth"/>
+                                <include reference="b5h-MS-gi7"/>
+                                <include reference="kaG-yZ-qpm"/>
                             </mask>
                         </variation>
                     </view>

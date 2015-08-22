@@ -25,4 +25,18 @@ class AboutViewController: UIViewController {
   @IBAction func goBackButton(sender: UIBarButtonItem) {
     webView.goBack()
   }
+  
+  @IBAction func share(sender: UIBarButtonItem) {
+    let string = "Hey, check this app out! It's really cool! :P "
+    let URL = NSURL(string: "http://tylerwowen.github.io/wechatbuddy")
+    let array:[AnyObject!] = [string, URL]
+    
+    var activityViewController = UIActivityViewController(activityItems: array, applicationActivities: nil)
+    
+    self.presentViewController(activityViewController, animated: true) {
+      () -> Void in
+      
+    }
+    
+  }
 }
