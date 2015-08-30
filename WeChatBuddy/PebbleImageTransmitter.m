@@ -1,5 +1,5 @@
 //
-//  PebbleUploader.m
+//  PebbleImageTransmitter.m
 //  WeChatBuddy
 //
 //  Created by Tyler Weimin Ouyang on 8/2/15.
