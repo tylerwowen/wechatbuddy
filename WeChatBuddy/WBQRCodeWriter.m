@@ -14,17 +14,18 @@
  * limitations under the License.
  */
 
-#import "ZXBitMatrix.h"
-#import "ZXByteMatrix.h"
-#import "ZXEncodeHints.h"
-#import "ZXQRCode.h"
-#import "ZXQRCodeEncoder.h"
-#import "ZXQRCodeErrorCorrectionLevel.h"
-#import "ZXQRCodeWriter.h"
+#import "WBQRCodeWriter.h"
 
-const int ZX_QUIET_ZONE_SIZE = 4;
+#import <ZXingObjC/ZXBitMatrix.h>
+#import <ZXingObjC/ZXByteMatrix.h>
+#import <ZXingObjC/ZXEncodeHints.h>
+#import <ZXingObjC/ZXQRCode.h>
+#import <ZXingObjC/ZXQRCodeEncoder.h>
+#import <ZXingObjC/ZXQRCodeErrorCorrectionLevel.h>
 
-@implementation ZXQRCodeWriter
+const int ZX_QUIET_ZONE_SIZE = 0;
+
+@implementation WBQRCodeWriter
 
 - (ZXBitMatrix *)encode:(NSString *)contents format:(ZXBarcodeFormat)format width:(int)width height:(int)height error:(NSError **)error {
   return [self encode:contents format:format width:width height:height hints:nil error:error];

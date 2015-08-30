@@ -7,6 +7,7 @@
 //
 
 #import "QRCodeRegenerator.h"
+#import "WBQRCodeWriter.h"
 
 #import <ZXingObjC/ZXingObjCQRCode.h>
 
@@ -62,7 +63,7 @@
   
   NSError *error = nil;
   
-  ZXQRCodeWriter *writer = [[ZXQRCodeWriter alloc] init];
+  WBQRCodeWriter *writer = [[WBQRCodeWriter alloc] init];
   ZXBitMatrix *result = [writer encode:_data
                                 format:kBarcodeFormatQRCode
                                  width:116
