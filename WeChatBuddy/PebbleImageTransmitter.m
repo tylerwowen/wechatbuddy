@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "PebbleImgafeTransmitter.h"
+#import "PebbleImageTransmitter.h"
 #import "MainViewController.h"
 
 /* The key used to transmit download data. Contains byte array. */
@@ -24,13 +24,13 @@
 // TODO: Check if this can base on pebble modles
 #define MAX_OUTGOING_SIZE 120
 
-@interface PebbleImgafeTransmitter ()
+@interface PebbleImageTransmitter ()
 
 @property (nonatomic) MainViewController *viewController;
 
 @end
 
-@implementation PebbleImgafeTransmitter {
+@implementation PebbleImageTransmitter {
   
   NSError *error;
   NSMutableArray *packages;

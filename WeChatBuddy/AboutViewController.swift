@@ -31,7 +31,7 @@ class AboutViewController: UIViewController {
     let URL = NSURL(string: "http://tylerwowen.github.io/wechatbuddy")
     let array:[AnyObject!] = [string, URL]
     
-    var activityViewController = UIActivityViewController(activityItems: array, applicationActivities: nil)
+    let activityViewController = UIActivityViewController(activityItems: array, applicationActivities: nil)
     
     self.presentViewController(activityViewController, animated: true) {
       () -> Void in

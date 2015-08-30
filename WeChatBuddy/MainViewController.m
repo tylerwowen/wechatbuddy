@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GradientBackgroundSetter.h"
-#import "PebbleImgafeTransmitter.h"
+#import "PebbleImageTransmitter.h"
 #import "QRCodeRegenerator.h"
 #import "MainViewController.h"
 
@@ -131,7 +131,7 @@
 
 - (void)sendBitmapToPebble {
   
-  PebbleImgafeTransmitter *uploader = [[PebbleImgafeTransmitter alloc]init];
+  PebbleImageTransmitter *uploader = [[PebbleImageTransmitter alloc]init];
   [uploader sendBitmapToPebble:self.bitmap];
 }
 

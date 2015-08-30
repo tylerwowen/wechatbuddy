@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,7 @@
 		2F63BFCB1B6C7CD6000A7F41 /* WeChatBuddyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63BFCA1B6C7CD6000A7F41 /* WeChatBuddyTests.m */; };
 		2F63BFD51B6C8B52000A7F41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F63BFD41B6C8B52000A7F41 /* Main.storyboard */; };
 		2F92F59A1B76857700114F97 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F92F5991B76857700114F97 /* AboutViewController.swift */; };
-		2FFE7BFE1B6E98D5002D7579 /* PebbleImgafeTransmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE7BFD1B6E98D5002D7579 /* PebbleImgafeTransmitter.m */; };
+		2FFE7BFE1B6E98D5002D7579 /* PebbleImageTransmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE7BFD1B6E98D5002D7579 /* PebbleImageTransmitter.m */; };
 		5B8699762B1B7A3D8C1089C8 /* Pods_WeChatBuddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFF32DB91F03A17E9BEBF5D /* Pods_WeChatBuddyTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BDA7EAD21C99118D550BBBF3 /* Pods_WeChatBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376E5BE4F263DEDAD3EA8BCD /* Pods_WeChatBuddy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -65,8 +65,8 @@
 		2F63BFD41B6C8B52000A7F41 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2F92F5981B76857600114F97 /* WeChatBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeChatBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F92F5991B76857700114F97 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
-		2FFE7BFC1B6E98D5002D7579 /* PebbleImgafeTransmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PebbleImgafeTransmitter.h; sourceTree = "<group>"; };
-		2FFE7BFD1B6E98D5002D7579 /* PebbleImgafeTransmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PebbleImgafeTransmitter.m; sourceTree = "<group>"; };
+		2FFE7BFC1B6E98D5002D7579 /* PebbleImageTransmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PebbleImageTransmitter.h; sourceTree = "<group>"; };
+		2FFE7BFD1B6E98D5002D7579 /* PebbleImageTransmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PebbleImageTransmitter.m; sourceTree = "<group>"; };
 		31FDC58BD93707DC52788E82 /* Pods-WeChatBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatBuddy/Pods-WeChatBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		376E5BE4F263DEDAD3EA8BCD /* Pods_WeChatBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeChatBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		387576F29B902BCCD0A386EF /* Pods-WeChatBuddyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatBuddyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatBuddyTests/Pods-WeChatBuddyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,8 +125,8 @@
 				2F63BFB61B6C7CD6000A7F41 /* MainViewController.m */,
 				2F225B801B76B44E0058441D /* GradientBackgroundSetter.h */,
 				2F225B811B76B44E0058441D /* GradientBackgroundSetter.m */,
-				2FFE7BFC1B6E98D5002D7579 /* PebbleImgafeTransmitter.h */,
-				2FFE7BFD1B6E98D5002D7579 /* PebbleImgafeTransmitter.m */,
+				2FFE7BFC1B6E98D5002D7579 /* PebbleImageTransmitter.h */,
+				2FFE7BFD1B6E98D5002D7579 /* PebbleImageTransmitter.m */,
 				2F43E5F21B6E07B800D0A740 /* QRCodeRegenerator.h */,
 				2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */,
 				2FFE7BFB1B6E845D002D7579 /* Resources */,
@@ -243,6 +243,7 @@
 		2F63BFA31B6C7CD6000A7F41 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Tyler;
 				TargetAttributes = {
@@ -257,7 +258,7 @@
 				};
 			};
 			buildConfigurationList = 2F63BFA61B6C7CD6000A7F41 /* Build configuration list for PBXProject "WeChatBuddy" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -397,7 +398,7 @@
 				2F63BFB71B6C7CD6000A7F41 /* MainViewController.m in Sources */,
 				2F63BFB41B6C7CD6000A7F41 /* AppDelegate.m in Sources */,
 				2F225B821B76B44E0058441D /* GradientBackgroundSetter.m in Sources */,
-				2FFE7BFE1B6E98D5002D7579 /* PebbleImgafeTransmitter.m in Sources */,
+				2FFE7BFE1B6E98D5002D7579 /* PebbleImageTransmitter.m in Sources */,
 				2F43E5FA1B6E0B4800D0A740 /* QRCodeRegenerator.m in Sources */,
 				2F63BFB11B6C7CD6000A7F41 /* main.m in Sources */,
 			);

@@ -10,7 +10,7 @@
 
 #import <PebbleKit/PebbleKit.h>
 
-@interface PebbleImgafeTransmitter : NSObject
+@interface PebbleImageTransmitter : NSObject
 
 - (void)sendBitmapToPebble:(PBBitmap*)bitmap;
 
