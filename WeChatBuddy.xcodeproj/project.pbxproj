@@ -47,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A2E89501B9510C600AD0AC3 /* PebbleImageTransmitterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PebbleImageTransmitterDelegate.h; sourceTree = "<group>"; };
 		2F225B801B76B44E0058441D /* GradientBackgroundSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientBackgroundSetter.h; sourceTree = "<group>"; };
 		2F225B811B76B44E0058441D /* GradientBackgroundSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientBackgroundSetter.m; sourceTree = "<group>"; };
 		2F43E5F21B6E07B800D0A740 /* QRCodeRegenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeRegenerator.h; sourceTree = "<group>"; };
@@ -124,18 +125,19 @@
 				2F92F5991B76857700114F97 /* AboutViewController.swift */,
 				2F63BFB21B6C7CD6000A7F41 /* AppDelegate.h */,
 				2F63BFB31B6C7CD6000A7F41 /* AppDelegate.m */,
-				2F63BFB51B6C7CD6000A7F41 /* MainViewController.h */,
-				2F63BFB61B6C7CD6000A7F41 /* MainViewController.m */,
 				2F225B801B76B44E0058441D /* GradientBackgroundSetter.h */,
 				2F225B811B76B44E0058441D /* GradientBackgroundSetter.m */,
+				2F63BFB51B6C7CD6000A7F41 /* MainViewController.h */,
+				2F63BFB61B6C7CD6000A7F41 /* MainViewController.m */,
+				2A2E89501B9510C600AD0AC3 /* PebbleImageTransmitterDelegate.h */,
 				2FFE7BFC1B6E98D5002D7579 /* PebbleImageTransmitter.h */,
 				2FFE7BFD1B6E98D5002D7579 /* PebbleImageTransmitter.m */,
 				2F43E5F21B6E07B800D0A740 /* QRCodeRegenerator.h */,
 				2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */,
-				2FA32B2A1B93B087000B90AF /* WBQRCodeWriter.h */,
-				2FA32B2B1B93B087000B90AF /* WBQRCodeWriter.m */,
 				2FFE7BFB1B6E845D002D7579 /* Resources */,
 				2F63BFAE1B6C7CD6000A7F41 /* Supporting Files */,
+				2FA32B2A1B93B087000B90AF /* WBQRCodeWriter.h */,
+				2FA32B2B1B93B087000B90AF /* WBQRCodeWriter.m */,
 			);
 			path = WeChatBuddy;
 			sourceTree = "<group>";

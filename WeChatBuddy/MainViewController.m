@@ -1,16 +1,17 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  WeChatBuddy
 //
 //  Created by Tyler Weimin Ouyang on 7/31/15.
 //  Copyright (c) 2015 Tyler. All rights reserved.
 //
 
+#import "MainViewController.h"
+
 #import "AppDelegate.h"
 #import "GradientBackgroundSetter.h"
 #import "PebbleImageTransmitter.h"
 #import "QRCodeRegenerator.h"
-#import "MainViewController.h"
 
 @interface MainViewController ()
 
@@ -132,6 +133,7 @@
 - (void)sendBitmapToPebble {
   
   PebbleImageTransmitter *uploader = [[PebbleImageTransmitter alloc]init];
+  uploader.delegate = self;
   [uploader sendBitmapToPebble:self.bitmap];
 }
 
@@ -155,7 +157,27 @@
   self.bitmap = [PBBitmap pebbleBitmapWithUIImage:self.QRCode];
 }
 
-#pragma mark - Progress View
+#pragma mark - Pebble Transmitter Delegate
+
+- (void)willStartTransmitting {
+  [self showProgress];
+  [self setStatusLabelToInProgress];
+  [self setPercentageWithTransferedPacakges:0 total:1];
+}
+
+- (void)didTransmitNumberOfPackges:(unsigned int)numberOfPackages inTotal:(unsigned int)total {
+  [self setPercentageWithTransferedPacakges:numberOfPackages total:total];
+}
+
+- (void)didFailTransmitting {
+  [self setStatusLabelToFail];
+}
+
+- (void)didFinishTransmitting {
+  [self setPercentageWithTransferedPacakges:1 total:1];
+  [self setStatusLabelToSuccess];
+  [self hideProgress];
+}
 
 - (void)setPercentageWithTransferedPacakges:(unsigned int)transfered total:(unsigned int)total {
   

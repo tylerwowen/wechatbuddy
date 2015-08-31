@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  WeChatBuddy
 //
 //  Created by Tyler Weimin Ouyang on 7/31/15.
@@ -7,17 +7,12 @@
 //
 @import UIKit;
 
-@interface MainViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+#import "PebbleImageTransmitterDelegate.h"
+
+@interface MainViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, PebbleImageTransmitterDelegate>
 
 @property (nonatomic, weak) IBOutlet UILabel *progressLabel;
 @property (nonatomic, weak) IBOutlet UIProgressView *progressView;
-
-- (void)hideProgress;
-- (void)showProgress;
-- (void)setPercentageWithTransferedPacakges:(unsigned int)transfered total:(unsigned int)total;
-- (void)setStatusLabelToSuccess;
-- (void)setStatusLabelToFail;
-- (void)setStatusLabelToInProgress;
 
 @end
 

@@ -5,10 +5,11 @@
 //  Created by Tyler Weimin Ouyang on 8/2/15.
 //  Copyright (c) 2015 Tyler. All rights reserved.
 //
+#import "PebbleImageTransmitter.h"
 
 #import "AppDelegate.h"
-#import "PebbleImageTransmitter.h"
 #import "MainViewController.h"
+#import "PebbleImageTransmitterDelegate.h"
 
 /* The key used to transmit download data. Contains byte array. */
 #define IOSDL_DATA @(100)
@@ -82,9 +83,7 @@
 
 - (void)sendPackages {
   
-  [self.viewController showProgress];
-  [self.viewController setStatusLabelToInProgress];
-  [self.viewController setPercentageWithTransferedPacakges:0 total:(unsigned int)[packages count]];
+  [self.delegate willStartTransmitting];
   
   [watch appMessagesPushUpdate:[packages objectAtIndex:currentIndex] onSent:^(PBWatch *watch, NSDictionary *update, NSError *apmerror) {
     
@@ -93,13 +92,13 @@
       if (currentIndex < [packages count] - 1) {
         
         currentIndex++;
-        [self.viewController setPercentageWithTransferedPacakges:(unsigned int)currentIndex total:(unsigned int)[packages count]];
+        [self.delegate didTransmitNumberOfPackges:(unsigned int)currentIndex inTotal:(unsigned int)[packages count]];
         [self recursivelySendAppMessage];
       }
     }
     else {
       NSLog(@"Error sending message at index: %ld", (long)currentIndex);
-      [self.viewController setStatusLabelToFail];
+      [self.delegate didFailTransmitting];
       error = apmerror;
     }
   }];
@@ -114,19 +113,18 @@
       if (currentIndex < [packages count] - 1) {
         
         currentIndex++;
-        [self.viewController setPercentageWithTransferedPacakges:(unsigned int)currentIndex total:(unsigned int)[packages count]];
+        [self.delegate didTransmitNumberOfPackges:(unsigned int)currentIndex inTotal:(unsigned int)[packages count]];
         [self recursivelySendAppMessage];
       }
       else{
-        [self.viewController setPercentageWithTransferedPacakges:1 total:1];
-        [self.viewController setStatusLabelToSuccess];
+        [self.delegate didFinishTransmitting];
         packages = nil;
         self.viewController = nil;
       }
     }
     else {
       NSLog(@"Error sending message at index: %ld", (long)currentIndex);
-      [self.viewController setStatusLabelToFail];
+      [self.delegate didFailTransmitting];
       packages = nil;
       self.viewController = nil;
       return;
