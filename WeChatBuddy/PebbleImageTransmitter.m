@@ -25,12 +25,6 @@
 // TODO: Check if this can base on pebble modles
 #define MAX_OUTGOING_SIZE 120
 
-@interface PebbleImageTransmitter ()
-
-@property (nonatomic) MainViewController *viewController;
-
-@end
-
 @implementation PebbleImageTransmitter {
   
   NSError *error;
@@ -41,8 +35,6 @@
 }
 
 - (void)sendBitmapToPebble:(PBBitmap*)bitmap{
-  
-  self.viewController = (MainViewController *)[[[UIApplication sharedApplication].delegate window] rootViewController];
   
   if (!bitmap) {
    
@@ -119,14 +111,12 @@
       else{
         [self.delegate didFinishTransmitting];
         packages = nil;
-        self.viewController = nil;
       }
     }
     else {
       NSLog(@"Error sending message at index: %ld", (long)currentIndex);
       [self.delegate didFailTransmitting];
       packages = nil;
-      self.viewController = nil;
       return;
     }
   }];

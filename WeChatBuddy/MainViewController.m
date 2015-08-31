@@ -128,15 +128,6 @@
   self.imagePickerController = nil;
 }
 
-#pragma mark - Pebble App Message
-
-- (void)sendBitmapToPebble {
-  
-  PebbleImageTransmitter *uploader = [[PebbleImageTransmitter alloc]init];
-  uploader.delegate = self;
-  [uploader sendBitmapToPebble:self.bitmap];
-}
-
 #pragma mark - Process Image
 
 - (void)processImage {
@@ -155,6 +146,15 @@
 
 - (void)generateBitmap {
   self.bitmap = [PBBitmap pebbleBitmapWithUIImage:self.QRCode];
+}
+
+#pragma mark - Pebble App Message
+
+- (void)sendBitmapToPebble {
+  
+  PebbleImageTransmitter *transmitter = [[PebbleImageTransmitter alloc]init];
+  transmitter.delegate = self;
+  [transmitter sendBitmapToPebble:self.bitmap];
 }
 
 #pragma mark - Pebble Transmitter Delegate
