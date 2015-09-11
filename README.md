@@ -2,6 +2,8 @@
 
 Show your WeChat QR code (or any QR code) on your pebble watch easily.
 
+<a href="https://geo.itunes.apple.com/us/app/wechatbuddypb/id1028884430?mt=8" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;"></a>
+
 ### Author
 
 @tylerwowen
