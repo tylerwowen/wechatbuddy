@@ -14,17 +14,19 @@
 		2F63BFB71B6C7CD6000A7F41 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63BFB61B6C7CD6000A7F41 /* MainViewController.m */; };
 		2F63BFBC1B6C7CD6000A7F41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F63BFBB1B6C7CD6000A7F41 /* Images.xcassets */; };
 		2F63BFBF1B6C7CD6000A7F41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F63BFBD1B6C7CD6000A7F41 /* LaunchScreen.xib */; };
-		2F63BFCB1B6C7CD6000A7F41 /* WeChatBuddyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63BFCA1B6C7CD6000A7F41 /* WeChatBuddyTests.m */; };
-		2F63BFD51B6C8B52000A7F41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F63BFD41B6C8B52000A7F41 /* Main.storyboard */; };
 		2F92F59A1B76857700114F97 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F92F5991B76857700114F97 /* AboutViewController.swift */; };
 		2FA32B2C1B93B087000B90AF /* WBQRCodeWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA32B2B1B93B087000B90AF /* WBQRCodeWriter.m */; };
+		2FD32D811BA92A06005F2510 /* WeChatBuddyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63BFCA1B6C7CD6000A7F41 /* WeChatBuddyTests.m */; settings = {ASSET_TAGS = (); }; };
+		2FD32D851BA92F9E005F2510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD32D871BA92F9E005F2510 /* Main.storyboard */; };
+		2FD32D921BA93B48005F2510 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FD32D941BA93B48005F2510 /* InfoPlist.strings */; };
+		2FD32D971BA93B48005F2510 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FD32D991BA93B48005F2510 /* Localizable.strings */; };
+		2FD32D9C1BA93B48005F2510 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FD32D9E1BA93B48005F2510 /* InfoPlist.strings */; };
 		2FFE7BFE1B6E98D5002D7579 /* PebbleImageTransmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE7BFD1B6E98D5002D7579 /* PebbleImageTransmitter.m */; };
-		5B8699762B1B7A3D8C1089C8 /* Pods_WeChatBuddyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFF32DB91F03A17E9BEBF5D /* Pods_WeChatBuddyTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BDA7EAD21C99118D550BBBF3 /* Pods_WeChatBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376E5BE4F263DEDAD3EA8BCD /* Pods_WeChatBuddy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2F63BFC51B6C7CD6000A7F41 /* PBXContainerItemProxy */ = {
+		2FD32D7C1BA929B9005F2510 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2F63BFA31B6C7CD6000A7F41 /* Project object */;
 			proxyType = 1;
@@ -61,14 +63,26 @@
 		2F63BFB61B6C7CD6000A7F41 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		2F63BFBB1B6C7CD6000A7F41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2F63BFBE1B6C7CD6000A7F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		2F63BFC41B6C7CD6000A7F41 /* WeChatBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeChatBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F63BFC91B6C7CD6000A7F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F63BFCA1B6C7CD6000A7F41 /* WeChatBuddyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatBuddyTests.m; sourceTree = "<group>"; };
-		2F63BFD41B6C8B52000A7F41 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2F92F5981B76857600114F97 /* WeChatBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeChatBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F92F5991B76857700114F97 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2FA32B2A1B93B087000B90AF /* WBQRCodeWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBQRCodeWriter.h; sourceTree = "<group>"; };
 		2FA32B2B1B93B087000B90AF /* WBQRCodeWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBQRCodeWriter.m; sourceTree = "<group>"; };
+		2FD32D771BA929B9005F2510 /* WeChatBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeChatBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD32D861BA92F9E005F2510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FD32D881BA92FB4005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		2FD32D891BA92FB4005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2FD32D8A1BA92FB9005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		2FD32D8B1BA92FB9005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2FD32D8D1BA9305D005F2510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2FD32D8F1BA93066005F2510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2FD32D931BA93B48005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2FD32D981BA93B48005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2FD32D9D1BA93B48005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2FD32D9F1BA93C1B005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2FD32DA01BA93C1B005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2FD32DA11BA93C1B005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2FFE7BFC1B6E98D5002D7579 /* PebbleImageTransmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PebbleImageTransmitter.h; sourceTree = "<group>"; };
 		2FFE7BFD1B6E98D5002D7579 /* PebbleImageTransmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PebbleImageTransmitter.m; sourceTree = "<group>"; };
 		31FDC58BD93707DC52788E82 /* Pods-WeChatBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatBuddy/Pods-WeChatBuddy.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,11 +102,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F63BFC11B6C7CD6000A7F41 /* Frameworks */ = {
+		2FD32D741BA929B9005F2510 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B8699762B1B7A3D8C1089C8 /* Pods_WeChatBuddyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				2F63BFAB1B6C7CD6000A7F41 /* WeChatBuddy.app */,
-				2F63BFC41B6C7CD6000A7F41 /* WeChatBuddyTests.xctest */,
+				2FD32D771BA929B9005F2510 /* WeChatBuddyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +158,8 @@
 		2F63BFAE1B6C7CD6000A7F41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2FD32D9E1BA93B48005F2510 /* InfoPlist.strings */,
+				2FD32D991BA93B48005F2510 /* Localizable.strings */,
 				2F92F5981B76857600114F97 /* WeChatBuddy-Bridging-Header.h */,
 				2F63BFAF1B6C7CD6000A7F41 /* Info.plist */,
 				2F63BFB01B6C7CD6000A7F41 /* main.m */,
@@ -164,6 +179,7 @@
 		2F63BFC81B6C7CD6000A7F41 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2FD32D941BA93B48005F2510 /* InfoPlist.strings */,
 				2F63BFC91B6C7CD6000A7F41 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -172,7 +188,7 @@
 		2FFE7BFB1B6E845D002D7579 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2F63BFD41B6C8B52000A7F41 /* Main.storyboard */,
+				2FD32D871BA92F9E005F2510 /* Main.storyboard */,
 				2F63BFBB1B6C7CD6000A7F41 /* Images.xcassets */,
 				2F63BFBD1B6C7CD6000A7F41 /* LaunchScreen.xib */,
 			);
@@ -223,25 +239,22 @@
 			productReference = 2F63BFAB1B6C7CD6000A7F41 /* WeChatBuddy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F63BFC31B6C7CD6000A7F41 /* WeChatBuddyTests */ = {
+		2FD32D761BA929B9005F2510 /* WeChatBuddyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F63BFD11B6C7CD6000A7F41 /* Build configuration list for PBXNativeTarget "WeChatBuddyTests" */;
+			buildConfigurationList = 2FD32D7E1BA929B9005F2510 /* Build configuration list for PBXNativeTarget "WeChatBuddyTests" */;
 			buildPhases = (
-				4CF9091A9695C084BFC2CEC8 /* Check Pods Manifest.lock */,
-				2F63BFC01B6C7CD6000A7F41 /* Sources */,
-				2F63BFC11B6C7CD6000A7F41 /* Frameworks */,
-				2F63BFC21B6C7CD6000A7F41 /* Resources */,
-				81E1A4B186EDF56E27D162C5 /* Copy Pods Resources */,
-				66AFA950AB9B85F845160D83 /* Embed Pods Frameworks */,
+				2FD32D731BA929B9005F2510 /* Sources */,
+				2FD32D741BA929B9005F2510 /* Frameworks */,
+				2FD32D751BA929B9005F2510 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F63BFC61B6C7CD6000A7F41 /* PBXTargetDependency */,
+				2FD32D7D1BA929B9005F2510 /* PBXTargetDependency */,
 			);
 			name = WeChatBuddyTests;
 			productName = WeChatBuddyTests;
-			productReference = 2F63BFC41B6C7CD6000A7F41 /* WeChatBuddyTests.xctest */;
+			productReference = 2FD32D771BA929B9005F2510 /* WeChatBuddyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -258,8 +271,8 @@
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = F5S48SAJAU;
 					};
-					2F63BFC31B6C7CD6000A7F41 = {
-						CreatedOnToolsVersion = 6.4;
+					2FD32D761BA929B9005F2510 = {
+						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 2F63BFAA1B6C7CD6000A7F41;
 					};
 				};
@@ -278,7 +291,7 @@
 			projectRoot = "";
 			targets = (
 				2F63BFAA1B6C7CD6000A7F41 /* WeChatBuddy */,
-				2F63BFC31B6C7CD6000A7F41 /* WeChatBuddyTests */,
+				2FD32D761BA929B9005F2510 /* WeChatBuddyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,15 +302,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F63BFBF1B6C7CD6000A7F41 /* LaunchScreen.xib in Resources */,
-				2F63BFD51B6C8B52000A7F41 /* Main.storyboard in Resources */,
+				2FD32D971BA93B48005F2510 /* Localizable.strings in Resources */,
+				2FD32D851BA92F9E005F2510 /* Main.storyboard in Resources */,
 				2F63BFBC1B6C7CD6000A7F41 /* Images.xcassets in Resources */,
+				2FD32D9C1BA93B48005F2510 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F63BFC21B6C7CD6000A7F41 /* Resources */ = {
+		2FD32D751BA929B9005F2510 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FD32D921BA93B48005F2510 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,51 +333,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4CF9091A9695C084BFC2CEC8 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		66AFA950AB9B85F845160D83 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeChatBuddyTests/Pods-WeChatBuddyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81E1A4B186EDF56E27D162C5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeChatBuddyTests/Pods-WeChatBuddyTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BC17F5DB255BE01866740702 /* Embed Pods Frameworks */ = {
@@ -412,21 +383,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F63BFC01B6C7CD6000A7F41 /* Sources */ = {
+		2FD32D731BA929B9005F2510 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F63BFCB1B6C7CD6000A7F41 /* WeChatBuddyTests.m in Sources */,
+				2FD32D811BA92A06005F2510 /* WeChatBuddyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F63BFC61B6C7CD6000A7F41 /* PBXTargetDependency */ = {
+		2FD32D7D1BA929B9005F2510 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2F63BFAA1B6C7CD6000A7F41 /* WeChatBuddy */;
-			targetProxy = 2F63BFC51B6C7CD6000A7F41 /* PBXContainerItemProxy */;
+			targetProxy = 2FD32D7C1BA929B9005F2510 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -435,8 +406,49 @@
 			isa = PBXVariantGroup;
 			children = (
 				2F63BFBE1B6C7CD6000A7F41 /* Base */,
+				2FD32D891BA92FB4005F2510 /* zh-Hans */,
+				2FD32D8B1BA92FB9005F2510 /* zh-Hant */,
+				2FD32D8F1BA93066005F2510 /* en */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2FD32D871BA92F9E005F2510 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD32D861BA92F9E005F2510 /* Base */,
+				2FD32D881BA92FB4005F2510 /* zh-Hans */,
+				2FD32D8A1BA92FB9005F2510 /* zh-Hant */,
+				2FD32D8D1BA9305D005F2510 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FD32D941BA93B48005F2510 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD32D931BA93B48005F2510 /* zh-Hans */,
+				2FD32D9F1BA93C1B005F2510 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2FD32D991BA93B48005F2510 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD32D981BA93B48005F2510 /* zh-Hans */,
+				2FD32DA01BA93C1B005F2510 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2FD32D9E1BA93B48005F2510 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD32D9D1BA93B48005F2510 /* zh-Hans */,
+				2FD32DA11BA93C1B005F2510 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -462,7 +474,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -505,6 +519,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -532,6 +547,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = WeChatBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TO.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeChatBuddy/WeChatBuddy-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -548,42 +564,34 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = WeChatBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TO.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeChatBuddy/WeChatBuddy-Bridging-Header.h";
 			};
 			name = Release;
 		};
-		2F63BFD21B6C7CD6000A7F41 /* Debug */ = {
+		2FD32D7F1BA929B9005F2510 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 387576F29B902BCCD0A386EF /* Pods-WeChatBuddyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = WeChatBuddyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TO.WeChatBuddyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeChatBuddy.app/WeChatBuddy";
 			};
 			name = Debug;
 		};
-		2F63BFD31B6C7CD6000A7F41 /* Release */ = {
+		2FD32D801BA929B9005F2510 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6890252F18D8D237B24D35DB /* Pods-WeChatBuddyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = WeChatBuddyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TO.WeChatBuddyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeChatBuddy.app/WeChatBuddy";
 			};
@@ -610,14 +618,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F63BFD11B6C7CD6000A7F41 /* Build configuration list for PBXNativeTarget "WeChatBuddyTests" */ = {
+		2FD32D7E1BA929B9005F2510 /* Build configuration list for PBXNativeTarget "WeChatBuddyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F63BFD21B6C7CD6000A7F41 /* Debug */,
-				2F63BFD31B6C7CD6000A7F41 /* Release */,
+				2FD32D7F1BA929B9005F2510 /* Debug */,
+				2FD32D801BA929B9005F2510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -140,7 +140,7 @@
     [self sendBitmapToPebble];
   }
   else {
-    self.statusLabel.text = @"Oops, unable to find a QR code.";
+    self.statusLabel.text = NSLocalizedString(@"Oops, unable to find a QR code😅", @"Error info when QR code is not found in image");
   }
 }
 
@@ -208,15 +208,15 @@
 
 #pragma mark - Status
 - (void)setStatusLabelToSuccess {
-  self.statusLabel.text = @"Success! Now you can use you Pebble App only.";
+  self.statusLabel.text = NSLocalizedString(@"Success! Now you can use you Pebble App only😁", @"Success text");
 }
 
 - (void)setStatusLabelToFail {
-  self.statusLabel.text = @"Failed to send the QR code. Please try again.";
+  self.statusLabel.text = NSLocalizedString(@"Failed to send the QR code. Please try again😅", @"Failure text");
 }
 
 - (void)setStatusLabelToInProgress {
-  self.statusLabel.text = @"Sending...";
+  self.statusLabel.text = NSLocalizedString(@"Sending...", @"Sending text");
 }
 
 @end

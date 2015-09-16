@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Tyler. All rights reserved.
 //
 
-#import <PebbleKit/PebbleKit.h>
+@import UIKit;
+@class PBWatch;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -1,0 +1,18 @@
+
+/* Class = "UIBarButtonItem"; title = "Photo Library"; ObjectID = "8s3-HW-Fm1"; */
+"8s3-HW-Fm1.title" = "Photo Library";
+
+/* Class = "UINavigationItem"; title = "WeChatBuddy"; ObjectID = "HHq-CI-LKg"; */
+"HHq-CI-LKg.title" = "WeChatBuddy";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "Mb6-9u-pRg"; */
+"Mb6-9u-pRg.text" = "0%";
+
+/* Class = "UIButton"; normalTitle = "About this app"; ObjectID = "VaY-Ly-W97"; */
+"VaY-Ly-W97.normalTitle" = "About this app";
+
+/* Class = "UILabel"; text = "WeChat Buddy"; ObjectID = "ohV-um-IHm"; */
+"ohV-um-IHm.text" = "WeChat Buddy";
+
+/* Class = "UILabel"; text = "Please select a QR code to tansfer"; ObjectID = "qAl-Pd-Crl"; */
+"qAl-Pd-Crl.text" = "Please select a QR code to tansfer";
