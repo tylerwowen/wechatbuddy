@@ -11,8 +11,9 @@ import UIKit
 let URL = NSURL(string: "http://tylerwowen.github.io/wechatbuddy")
 let URLReq = NSURLRequest(URL: URL!)
 
-class AboutViewController: UIViewController {
+class AboutViewController: UIViewController, UIWebViewDelegate{
   
+  @IBOutlet weak var indicator: UIActivityIndicatorView!
   @IBOutlet weak var webView: UIWebView!
   
   override func viewDidLoad() {
@@ -20,6 +21,7 @@ class AboutViewController: UIViewController {
     
     GradientBackgroundSetter.setBackgrooundColorForView(self.view)
     webView.loadRequest(URLReq)
+    webView.delegate = self
   }
   
   @IBAction func goBackButton(sender: UIBarButtonItem) {
@@ -37,6 +39,14 @@ class AboutViewController: UIViewController {
       () -> Void in
       
     }
-    
   }
+  
+  func webViewDidStartLoad(webView: UIWebView) {
+    indicator.startAnimating()
+  }
+  
+  func webViewDidFinishLoad(webView: UIWebView) {
+    indicator.stopAnimating()
+  }
+  
 }

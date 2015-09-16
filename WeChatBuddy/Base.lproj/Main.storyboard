@@ -244,6 +244,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wQ3-DG-I72">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                            </activityIndicatorView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.5" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbR-ez-69D">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -278,43 +281,48 @@
                         <constraints>
                             <constraint firstItem="hbR-ez-69D" firstAttribute="leading" secondItem="x3T-IA-ABL" secondAttribute="leading" id="8vn-2G-Pcj"/>
                             <constraint firstItem="hbR-ez-69D" firstAttribute="top" secondItem="x3T-IA-ABL" secondAttribute="bottom" id="93L-Id-kuq"/>
+                            <constraint firstItem="wQ3-DG-I72" firstAttribute="centerX" secondItem="hbR-ez-69D" secondAttribute="centerX" id="DaA-YY-keq"/>
                             <constraint firstAttribute="trailing" secondItem="x3T-IA-ABL" secondAttribute="trailing" id="PbI-tH-oth"/>
                             <constraint firstItem="hbR-ez-69D" firstAttribute="trailing" secondItem="x3T-IA-ABL" secondAttribute="trailing" id="U3w-YW-isx"/>
-                            <constraint firstItem="IDt-sq-vJ7" firstAttribute="top" secondItem="x3T-IA-ABL" secondAttribute="bottom" constant="39" id="WUO-DB-5t4"/>
                             <constraint firstItem="x3T-IA-ABL" firstAttribute="leading" secondItem="p0v-7R-Xqk" secondAttribute="leading" id="b5h-MS-gi7"/>
+                            <constraint firstItem="wQ3-DG-I72" firstAttribute="centerY" secondItem="x3T-IA-ABL" secondAttribute="centerY" id="cP0-yi-wPD"/>
                             <constraint firstItem="x3T-IA-ABL" firstAttribute="top" secondItem="dfC-UT-0sE" secondAttribute="bottom" id="kaG-yZ-qpm"/>
                             <constraint firstAttribute="bottomMargin" secondItem="hbR-ez-69D" secondAttribute="bottom" constant="-5" id="yhd-Uu-aMe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="x3T-IA-ABL"/>
+                                <exclude reference="wQ3-DG-I72"/>
                                 <exclude reference="hbR-ez-69D"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="WUO-DB-5t4"/>
+                                <exclude reference="PbI-tH-oth"/>
+                                <exclude reference="b5h-MS-gi7"/>
+                                <exclude reference="kaG-yZ-qpm"/>
+                                <exclude reference="DaA-YY-keq"/>
+                                <exclude reference="cP0-yi-wPD"/>
                                 <exclude reference="8vn-2G-Pcj"/>
                                 <exclude reference="93L-Id-kuq"/>
                                 <exclude reference="U3w-YW-isx"/>
                                 <exclude reference="yhd-Uu-aMe"/>
-                                <exclude reference="PbI-tH-oth"/>
-                                <exclude reference="b5h-MS-gi7"/>
-                                <exclude reference="kaG-yZ-qpm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="x3T-IA-ABL"/>
+                                <include reference="wQ3-DG-I72"/>
                                 <include reference="hbR-ez-69D"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="WUO-DB-5t4"/>
+                                <include reference="PbI-tH-oth"/>
+                                <include reference="b5h-MS-gi7"/>
+                                <include reference="kaG-yZ-qpm"/>
+                                <include reference="DaA-YY-keq"/>
+                                <include reference="cP0-yi-wPD"/>
                                 <include reference="8vn-2G-Pcj"/>
                                 <include reference="93L-Id-kuq"/>
                                 <include reference="U3w-YW-isx"/>
                                 <include reference="yhd-Uu-aMe"/>
-                                <include reference="PbI-tH-oth"/>
-                                <include reference="b5h-MS-gi7"/>
-                                <include reference="kaG-yZ-qpm"/>
                             </mask>
                         </variation>
                     </view>
@@ -322,6 +330,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="400" height="800"/>
                     <connections>
+                        <outlet property="indicator" destination="wQ3-DG-I72" id="Oa5-kG-VXO"/>
                         <outlet property="webView" destination="x3T-IA-ABL" id="RXz-yn-3Gt"/>
                     </connections>
                 </viewController>
