@@ -8,7 +8,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--WeChatBuddy-->
+        <!--Main View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController storyboardIdentifier="mainView" id="2" customClass="MainViewController" sceneMemberID="viewController">
@@ -94,7 +94,18 @@
                                 <color key="progressTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="trackTintColor" red="0.094117647060000004" green="0.4549019608" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeChat Buddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohV-um-IHm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaY-Ly-W97">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <state key="normal" title="About this app">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Zlr-or-uJ8" kind="show" id="Yr7-tw-2dK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QRBuddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohV-um-IHm">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="ISt-0r-Qyg"/>
@@ -116,17 +127,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaY-Ly-W97">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
-                                <state key="normal" title="About this app">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Zlr-or-uJ8" kind="show" id="Yr7-tw-2dK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.41960784309999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -160,8 +160,8 @@
                                 <exclude reference="qAl-Pd-Crl"/>
                                 <exclude reference="Mb6-9u-pRg"/>
                                 <exclude reference="EC2-tL-lnx"/>
-                                <exclude reference="ohV-um-IHm"/>
                                 <exclude reference="VaY-Ly-W97"/>
+                                <exclude reference="ohV-um-IHm"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="cgR-nA-gv9"/>
@@ -189,8 +189,8 @@
                                 <include reference="qAl-Pd-Crl"/>
                                 <include reference="Mb6-9u-pRg"/>
                                 <include reference="EC2-tL-lnx"/>
-                                <include reference="ohV-um-IHm"/>
                                 <include reference="VaY-Ly-W97"/>
+                                <include reference="ohV-um-IHm"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="cgR-nA-gv9"/>
@@ -214,7 +214,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="WeChatBuddy" id="HHq-CI-LKg"/>
                     <connections>
                         <outlet property="imageView" destination="9cY-Yu-f9x" id="jUN-7H-XVG"/>
                         <outlet property="progressLabel" destination="Mb6-9u-pRg" id="Ft9-ED-3bs"/>
@@ -230,7 +229,7 @@
         <!--About View Controller-->
         <scene sceneID="KPY-0L-cMP">
             <objects>
-                <viewController id="Zlr-or-uJ8" customClass="AboutViewController" customModule="WeChatBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zlr-or-uJ8" customClass="AboutViewController" customModule="PebbleQR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dfC-UT-0sE"/>
                         <viewControllerLayoutGuide type="bottom" id="IDt-sq-vJ7"/>
@@ -296,15 +295,15 @@
                                 <exclude reference="hbR-ez-69D"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="PbI-tH-oth"/>
-                                <exclude reference="b5h-MS-gi7"/>
-                                <exclude reference="kaG-yZ-qpm"/>
                                 <exclude reference="DaA-YY-keq"/>
                                 <exclude reference="cP0-yi-wPD"/>
                                 <exclude reference="8vn-2G-Pcj"/>
                                 <exclude reference="93L-Id-kuq"/>
                                 <exclude reference="U3w-YW-isx"/>
                                 <exclude reference="yhd-Uu-aMe"/>
+                                <exclude reference="PbI-tH-oth"/>
+                                <exclude reference="b5h-MS-gi7"/>
+                                <exclude reference="kaG-yZ-qpm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -314,15 +313,15 @@
                                 <include reference="hbR-ez-69D"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PbI-tH-oth"/>
-                                <include reference="b5h-MS-gi7"/>
-                                <include reference="kaG-yZ-qpm"/>
                                 <include reference="DaA-YY-keq"/>
                                 <include reference="cP0-yi-wPD"/>
                                 <include reference="8vn-2G-Pcj"/>
                                 <include reference="93L-Id-kuq"/>
                                 <include reference="U3w-YW-isx"/>
                                 <include reference="yhd-Uu-aMe"/>
+                                <include reference="PbI-tH-oth"/>
+                                <include reference="b5h-MS-gi7"/>
+                                <include reference="kaG-yZ-qpm"/>
                             </mask>
                         </variation>
                     </view>

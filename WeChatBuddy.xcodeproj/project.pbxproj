@@ -54,7 +54,7 @@
 		2F225B811B76B44E0058441D /* GradientBackgroundSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientBackgroundSetter.m; sourceTree = "<group>"; };
 		2F43E5F21B6E07B800D0A740 /* QRCodeRegenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeRegenerator.h; sourceTree = "<group>"; };
 		2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeRegenerator.m; sourceTree = "<group>"; };
-		2F63BFAB1B6C7CD6000A7F41 /* WeChatBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F63BFAB1B6C7CD6000A7F41 /* PebbleQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PebbleQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F63BFAF1B6C7CD6000A7F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F63BFB01B6C7CD6000A7F41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F63BFB21B6C7CD6000A7F41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,16 +67,17 @@
 		2F63BFCA1B6C7CD6000A7F41 /* WeChatBuddyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatBuddyTests.m; sourceTree = "<group>"; };
 		2F92F5981B76857600114F97 /* WeChatBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeChatBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F92F5991B76857700114F97 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		2F959E731BB2071100EA9871 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2F959E751BB2071300EA9871 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2F959E771BB2071600EA9871 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2F959E7F1BB2078B00EA9871 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		2F959E811BB2081F00EA9871 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		2F959E831BB2082300EA9871 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		2F959E891BB20A4600EA9871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2FA32B2A1B93B087000B90AF /* WBQRCodeWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBQRCodeWriter.h; sourceTree = "<group>"; };
 		2FA32B2B1B93B087000B90AF /* WBQRCodeWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBQRCodeWriter.m; sourceTree = "<group>"; };
 		2FD32D771BA929B9005F2510 /* WeChatBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeChatBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD32D861BA92F9E005F2510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2FD32D881BA92FB4005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		2FD32D891BA92FB4005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		2FD32D8A1BA92FB9005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
-		2FD32D8B1BA92FB9005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		2FD32D8D1BA9305D005F2510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		2FD32D8F1BA93066005F2510 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2FD32D931BA93B48005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2FD32D981BA93B48005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2FD32D9D1BA93B48005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -126,7 +127,7 @@
 		2F63BFAC1B6C7CD6000A7F41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F63BFAB1B6C7CD6000A7F41 /* WeChatBuddy.app */,
+				2F63BFAB1B6C7CD6000A7F41 /* PebbleQR.app */,
 				2FD32D771BA929B9005F2510 /* WeChatBuddyTests.xctest */,
 			);
 			name = Products;
@@ -218,9 +219,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F63BFAA1B6C7CD6000A7F41 /* WeChatBuddy */ = {
+		2F63BFAA1B6C7CD6000A7F41 /* QRBuddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F63BFCE1B6C7CD6000A7F41 /* Build configuration list for PBXNativeTarget "WeChatBuddy" */;
+			buildConfigurationList = 2F63BFCE1B6C7CD6000A7F41 /* Build configuration list for PBXNativeTarget "QRBuddy" */;
 			buildPhases = (
 				43FB5F59893A30E062915AE6 /* Check Pods Manifest.lock */,
 				2F63BFA71B6C7CD6000A7F41 /* Sources */,
@@ -234,9 +235,9 @@
 			);
 			dependencies = (
 			);
-			name = WeChatBuddy;
+			name = QRBuddy;
 			productName = WeChatBuddy;
-			productReference = 2F63BFAB1B6C7CD6000A7F41 /* WeChatBuddy.app */;
+			productReference = 2F63BFAB1B6C7CD6000A7F41 /* PebbleQR.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2FD32D761BA929B9005F2510 /* WeChatBuddyTests */ = {
@@ -284,13 +285,15 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 2F63BFA21B6C7CD6000A7F41;
 			productRefGroup = 2F63BFAC1B6C7CD6000A7F41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F63BFAA1B6C7CD6000A7F41 /* WeChatBuddy */,
+				2F63BFAA1B6C7CD6000A7F41 /* QRBuddy */,
 				2FD32D761BA929B9005F2510 /* WeChatBuddyTests */,
 			);
 		};
@@ -396,7 +399,7 @@
 /* Begin PBXTargetDependency section */
 		2FD32D7D1BA929B9005F2510 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F63BFAA1B6C7CD6000A7F41 /* WeChatBuddy */;
+			target = 2F63BFAA1B6C7CD6000A7F41 /* QRBuddy */;
 			targetProxy = 2FD32D7C1BA929B9005F2510 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -406,9 +409,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				2F63BFBE1B6C7CD6000A7F41 /* Base */,
-				2FD32D891BA92FB4005F2510 /* zh-Hans */,
-				2FD32D8B1BA92FB9005F2510 /* zh-Hant */,
-				2FD32D8F1BA93066005F2510 /* en */,
+				2F959E731BB2071100EA9871 /* en */,
+				2F959E751BB2071300EA9871 /* zh-Hans */,
+				2F959E771BB2071600EA9871 /* zh-Hant */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -417,9 +420,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				2FD32D861BA92F9E005F2510 /* Base */,
-				2FD32D881BA92FB4005F2510 /* zh-Hans */,
-				2FD32D8A1BA92FB9005F2510 /* zh-Hant */,
-				2FD32D8D1BA9305D005F2510 /* en */,
+				2F959E7F1BB2078B00EA9871 /* en */,
+				2F959E811BB2081F00EA9871 /* zh-Hans */,
+				2F959E831BB2082300EA9871 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			children = (
 				2FD32D9D1BA93B48005F2510 /* zh-Hans */,
 				2FD32DA11BA93C1B005F2510 /* zh-Hant */,
+				2F959E891BB20A4600EA9871 /* Base */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -547,7 +551,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = WeChatBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "TO.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = TO.WeChatBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeChatBuddy/WeChatBuddy-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -564,7 +568,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = WeChatBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "TO.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = TO.WeChatBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeChatBuddy/WeChatBuddy-Bridging-Header.h";
 			};
@@ -609,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F63BFCE1B6C7CD6000A7F41 /* Build configuration list for PBXNativeTarget "WeChatBuddy" */ = {
+		2F63BFCE1B6C7CD6000A7F41 /* Build configuration list for PBXNativeTarget "QRBuddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F63BFCF1B6C7CD6000A7F41 /* Debug */,
@@ -625,6 +629,7 @@
 				2FD32D801BA929B9005F2510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

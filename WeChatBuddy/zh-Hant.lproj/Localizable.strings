@@ -1,12 +1,12 @@
 /* Failure text */
-"Failed to send the QR code. Please try again." = "無法傳送二維碼。再試一次吧😅";
+"Failed to send the QR code. Please try again😅" = "無法傳送二維碼. 請重試😅";
 
 /* Error info when QR code is not found in image */
-"Oops, unable to find a QR code." = "糟糕，找不到二維碼。再試一次吧😅";
+"Oops, unable to find a QR code😅" = "糟糕，找不到二維碼. 請重試😅";
 
 /* Sending text */
 "Sending..." = "傳送中...";
 
 /* Success text */
-"Success! Now you can use you Pebble App only." = "傳送成功！您可以在Pebble上使用微信助手了。";
+"Success! Now you can use you Pebble App only😁" = "傳送成功！您可以在Pebble上使用微信助手了😁";
 

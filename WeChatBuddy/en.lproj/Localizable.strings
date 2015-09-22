@@ -1,0 +1,12 @@
+/* Failure text */
+"Failed to send the QR code. Please try again." = "Failed to send the QR code. Please try again.";
+
+/* Error info when QR code is not found in image */
+"Oops, unable to find a QR code." = "Oops, unable to find a QR code.";
+
+/* Sending text */
+"Sending..." = "Sending...";
+
+/* Success text */
+"Success! Now you can use you Pebble App only." = "Success! Now you can use you Pebble App only.";
+

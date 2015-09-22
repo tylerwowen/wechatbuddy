@@ -1,6 +1,5 @@
 /* Class = "UILabel"; text = "  Copyright (c) 2015 Tyler_O. All rights reserved."; ObjectID = "8ie-xW-0ye"; */
 "8ie-xW-0ye.text" = "  Copyright (c) 2015 Tyler_O. 保留所有的權利.";
 
-/* Class = "UILabel"; text = "WeChatBuddy"; ObjectID = "kId-c2-rCX"; */
+/* Class = "UILabel"; text = "QRBuddy"; ObjectID = "kId-c2-rCX"; */
 "kId-c2-rCX.text" = "微信助手";
-
