@@ -23,4 +23,4 @@ Show your QR code on your pebble watch.
 
 ### Support or Contact
 
-Contact me via LinkedIn :]
+Contact me via [LinkedIn](https://www.linkedin.com/in/tylerouyang) :]
