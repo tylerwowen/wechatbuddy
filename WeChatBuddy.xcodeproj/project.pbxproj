@@ -54,7 +54,7 @@
 		2F225B811B76B44E0058441D /* GradientBackgroundSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientBackgroundSetter.m; sourceTree = "<group>"; };
 		2F43E5F21B6E07B800D0A740 /* QRCodeRegenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeRegenerator.h; sourceTree = "<group>"; };
 		2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeRegenerator.m; sourceTree = "<group>"; };
-		2F63BFAB1B6C7CD6000A7F41 /* PebbleQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PebbleQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F63BFAB1B6C7CD6000A7F41 /* QRBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F63BFAF1B6C7CD6000A7F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F63BFB01B6C7CD6000A7F41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F63BFB21B6C7CD6000A7F41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		2F63BFAC1B6C7CD6000A7F41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F63BFAB1B6C7CD6000A7F41 /* PebbleQR.app */,
+				2F63BFAB1B6C7CD6000A7F41 /* QRBuddy.app */,
 				2FD32D771BA929B9005F2510 /* WeChatBuddyTests.xctest */,
 			);
 			name = Products;
@@ -237,7 +237,7 @@
 			);
 			name = QRBuddy;
 			productName = WeChatBuddy;
-			productReference = 2F63BFAB1B6C7CD6000A7F41 /* PebbleQR.app */;
+			productReference = 2F63BFAB1B6C7CD6000A7F41 /* QRBuddy.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2FD32D761BA929B9005F2510 /* WeChatBuddyTests */ = {
