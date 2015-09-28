@@ -30,6 +30,9 @@
 
 @implementation MainViewController
 
+NSString * const WatchAppDeepLink = @"pebble://appstore/55c712656b4abe9e19000069";
+NSString * const PebbleAppStoreLink = @"itms-apps://geo.itunes.apple.com/us/app/pebble-smartwatch/id592012721?mt=8";
+
 - (void)viewDidLoad {
   [super viewDidLoad];
   
@@ -221,7 +224,7 @@
 
 #pragma mark - Get WatchApp
 - (IBAction)getPebbleWatchAppButton:(UIButton *)sender {
-  NSURL *pebbleURL = [NSURL URLWithString:@"pebble://appstore/55c712656b4abe9e19000069"];
+  NSURL *pebbleURL = [NSURL URLWithString:WatchAppDeepLink];
   if ([[UIApplication sharedApplication] canOpenURL:pebbleURL]) {
     [[UIApplication sharedApplication] openURL:pebbleURL];
   }
@@ -242,7 +245,7 @@
   UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Yes"
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction * action) {
-                                                          NSURL *storeURL = [NSURL URLWithString:@"itms-apps://geo.itunes.apple.com/us/app/pebble-smartwatch/id592012721?mt=8"];
+                                                          NSURL *storeURL = [NSURL URLWithString:PebbleAppStoreLink];
                                                           [[UIApplication sharedApplication] openURL:storeURL];
                                                         }];
   
