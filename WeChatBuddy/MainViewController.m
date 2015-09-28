@@ -219,5 +219,38 @@
   self.statusLabel.text = NSLocalizedString(@"Sending...", @"Sending text");
 }
 
+#pragma mark - Get WatchApp
+- (IBAction)getPebbleWatchAppButton:(UIButton *)sender {
+  NSURL *pebbleURL = [NSURL URLWithString:@"pebble://appstore/55c712656b4abe9e19000069"];
+  if ([[UIApplication sharedApplication] canOpenURL:pebbleURL]) {
+    [[UIApplication sharedApplication] openURL:pebbleURL];
+  }
+  else {
+    [self showAlert];
+  }
+}
+
+- (void)showAlert {
+  UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Pebble App Not Found"
+                                                                 message:@"Do you want to download the Pebble App from App Store?"
+                                                          preferredStyle:UIAlertControllerStyleAlert];
+  
+  UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"No, thanks"
+                                                         style:UIAlertActionStyleCancel
+                                                       handler:nil];
+  
+  UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Yes"
+                                                          style:UIAlertActionStyleDefault
+                                                        handler:^(UIAlertAction * action) {
+                                                          NSURL *storeURL = [NSURL URLWithString:@"itms-apps://geo.itunes.apple.com/us/app/pebble-smartwatch/id592012721?mt=8"];
+                                                          [[UIApplication sharedApplication] openURL:storeURL];
+                                                        }];
+  
+  [alert addAction:defaultAction];
+  [alert addAction:cancelAction];
+  [self presentViewController:alert animated:YES completion:nil];
+}
+
+
 @end
 

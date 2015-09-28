@@ -1,9 +1,9 @@
 {
   "uuid": "043fe8a1-70df-403b-a7bb-3338db1fa55f",
-  "shortName": "WeChat Buddy",
-  "longName": "WeChat Buddy",
+  "shortName": "QRBuddy",
+  "longName": "QR Buddy for Pebble",
   "companyName": "Tyler O",
-  "versionLabel": "1.1",
+  "versionLabel": "1.2",
   "sdkVersion": "3",
   "targetPlatforms": ["aplite", "basalt"],
   "watchapp": {

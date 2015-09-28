@@ -127,6 +127,30 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAv-Fe-Mhd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="aCr-hI-IlY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <state key="normal" title="Get Pebble WatchApp">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aCr-hI-IlY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="aCr-hI-IlY"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="getPebbleWatchAppButton:" destination="2" eventType="touchUpInside" id="bFT-J3-Ynz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.41960784309999999" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -135,6 +159,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="qAl-Pd-Crl" secondAttribute="trailing" constant="87" id="EtT-ja-pGg">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="ZAv-Fe-Mhd" firstAttribute="leading" secondItem="VaY-Ly-W97" secondAttribute="leading" id="MLD-Rk-XO5"/>
+                            <constraint firstItem="ZAv-Fe-Mhd" firstAttribute="top" secondItem="VaY-Ly-W97" secondAttribute="bottom" constant="8" symbolic="YES" id="PHE-ah-3Hh"/>
                             <constraint firstItem="9cY-Yu-f9x" firstAttribute="top" secondItem="qAl-Pd-Crl" secondAttribute="bottom" constant="22" id="Pe7-RG-CxD">
                                 <variation key="heightClass=regular-widthClass=compact" constant="18"/>
                             </constraint>
@@ -146,6 +172,7 @@
                             <constraint firstItem="9cY-Yu-f9x" firstAttribute="centerX" secondItem="tb4-16-R6K" secondAttribute="centerX" id="g12-De-Fnm"/>
                             <constraint firstAttribute="width" secondItem="ohV-um-IHm" secondAttribute="width" id="icI-9A-jad"/>
                             <constraint firstItem="tb4-16-R6K" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="kSi-21-ERN"/>
+                            <constraint firstItem="ZAv-Fe-Mhd" firstAttribute="trailing" secondItem="VaY-Ly-W97" secondAttribute="trailing" id="rbK-8S-NM2"/>
                             <constraint firstItem="tb4-16-R6K" firstAttribute="bottom" secondItem="AiX-X2-HEs" secondAttribute="top" id="tca-oe-Uo9"/>
                             <constraint firstAttribute="centerY" secondItem="9cY-Yu-f9x" secondAttribute="centerY" id="u0f-f1-VFW"/>
                             <constraint firstAttribute="centerX" secondItem="VaY-Ly-W97" secondAttribute="centerX" id="uFZ-DU-rQk"/>
@@ -162,6 +189,7 @@
                                 <exclude reference="EC2-tL-lnx"/>
                                 <exclude reference="VaY-Ly-W97"/>
                                 <exclude reference="ohV-um-IHm"/>
+                                <exclude reference="ZAv-Fe-Mhd"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="cgR-nA-gv9"/>
@@ -173,6 +201,9 @@
                                 <exclude reference="EtT-ja-pGg"/>
                                 <exclude reference="wEv-VA-oLO"/>
                                 <exclude reference="uFZ-DU-rQk"/>
+                                <exclude reference="MLD-Rk-XO5"/>
+                                <exclude reference="PHE-ah-3Hh"/>
+                                <exclude reference="rbK-8S-NM2"/>
                                 <exclude reference="Pe7-RG-CxD"/>
                                 <exclude reference="Q5X-0L-eBx"/>
                                 <exclude reference="RPG-KZ-wTb"/>
@@ -191,6 +222,7 @@
                                 <include reference="EC2-tL-lnx"/>
                                 <include reference="VaY-Ly-W97"/>
                                 <include reference="ohV-um-IHm"/>
+                                <include reference="ZAv-Fe-Mhd"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="cgR-nA-gv9"/>
@@ -202,6 +234,9 @@
                                 <include reference="EtT-ja-pGg"/>
                                 <include reference="wEv-VA-oLO"/>
                                 <include reference="uFZ-DU-rQk"/>
+                                <include reference="MLD-Rk-XO5"/>
+                                <include reference="PHE-ah-3Hh"/>
+                                <include reference="rbK-8S-NM2"/>
                                 <include reference="Pe7-RG-CxD"/>
                                 <include reference="Q5X-0L-eBx"/>
                                 <include reference="RPG-KZ-wTb"/>
@@ -229,7 +264,7 @@
         <!--About View Controller-->
         <scene sceneID="KPY-0L-cMP">
             <objects>
-                <viewController id="Zlr-or-uJ8" customClass="AboutViewController" customModule="PebbleQR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zlr-or-uJ8" customClass="AboutViewController" customModule="QRBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dfC-UT-0sE"/>
                         <viewControllerLayoutGuide type="bottom" id="IDt-sq-vJ7"/>
