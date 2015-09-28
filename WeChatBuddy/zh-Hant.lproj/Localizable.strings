@@ -1,8 +1,17 @@
+/* Alert messsage */
+"Do you want to download the Pebble App from App Store?" = "是否從應用商店獲取Pebble App？";
+
 /* Failure text */
 "Failed to send the QR code. Please try again😅" = "無法傳送二維碼. 請重試😅";
 
+/* No */
+"No, thanks" = "不用了";
+
 /* Error info when QR code is not found in image */
 "Oops, unable to find a QR code😅" = "糟糕，找不到二維碼. 請重試😅";
+
+/* Alert title */
+"Pebble App Not Found" = "找不到Pebble App";
 
 /* Sending text */
 "Sending..." = "傳送中...";
@@ -10,3 +19,5 @@
 /* Success text */
 "Success! Now you can use you Pebble App only😁" = "傳送成功！您可以在Pebble上使用微信助手了😁";
 
+/* Yes */
+"Yes" = "OK";

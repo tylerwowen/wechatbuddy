@@ -234,15 +234,15 @@ NSString * const PebbleAppStoreLink = @"itms-apps://geo.itunes.apple.com/us/app/
 }
 
 - (void)showAlert {
-  UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Pebble App Not Found"
-                                                                 message:@"Do you want to download the Pebble App from App Store?"
+  UIAlertController* alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Pebble App Not Found", "Alert title")
+                                                                 message:NSLocalizedString(@"Do you want to download the Pebble App from App Store?", "Alert messsage")
                                                           preferredStyle:UIAlertControllerStyleAlert];
   
-  UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"No, thanks"
+  UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"No, thanks", "No")
                                                          style:UIAlertActionStyleCancel
                                                        handler:nil];
   
-  UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Yes"
+  UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Yes", "Yes")
                                                           style:UIAlertActionStyleDefault
                                                         handler:^(UIAlertAction * action) {
                                                           NSURL *storeURL = [NSURL URLWithString:PebbleAppStoreLink];

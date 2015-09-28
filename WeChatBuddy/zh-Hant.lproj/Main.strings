@@ -7,6 +7,9 @@
 /* Class = "UIButton"; normalTitle = "About this app"; ObjectID = "VaY-Ly-W97"; */
 "VaY-Ly-W97.normalTitle" = "關於此App";
 
+/* Class = "UIButton"; normalTitle = "Get Pebble WatchApp"; ObjectID = "ZAv-Fe-Mhd"; */
+"ZAv-Fe-Mhd.normalTitle" = "獲取Pebble手表App";
+
 /* Class = "UILabel"; text = "QRBuddy"; ObjectID = "ohV-um-IHm"; */
 "ohV-um-IHm.text" = "微信助手";
 

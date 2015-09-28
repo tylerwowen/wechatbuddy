@@ -50,6 +50,10 @@
 
 /* Begin PBXFileReference section */
 		2A2E89501B9510C600AD0AC3 /* PebbleImageTransmitterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PebbleImageTransmitterDelegate.h; sourceTree = "<group>"; };
+		2F2219071BB92C05003166AB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2F2219091BB92C96003166AB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2F22190A1BB92CC4003166AB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2F22190B1BB92FA4003166AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F225B801B76B44E0058441D /* GradientBackgroundSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientBackgroundSetter.h; sourceTree = "<group>"; };
 		2F225B811B76B44E0058441D /* GradientBackgroundSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientBackgroundSetter.m; sourceTree = "<group>"; };
 		2F43E5F21B6E07B800D0A740 /* QRCodeRegenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeRegenerator.h; sourceTree = "<group>"; };
@@ -79,10 +83,7 @@
 		2FD32D771BA929B9005F2510 /* WeChatBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeChatBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD32D861BA92F9E005F2510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FD32D931BA93B48005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		2FD32D981BA93B48005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2FD32D9D1BA93B48005F2510 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2FD32D9F1BA93C1B005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		2FD32DA01BA93C1B005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2FD32DA11BA93C1B005F2510 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		2FFE7BFC1B6E98D5002D7579 /* PebbleImageTransmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PebbleImageTransmitter.h; sourceTree = "<group>"; };
 		2FFE7BFD1B6E98D5002D7579 /* PebbleImageTransmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PebbleImageTransmitter.m; sourceTree = "<group>"; };
@@ -439,8 +440,9 @@
 		2FD32D991BA93B48005F2510 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FD32D981BA93B48005F2510 /* zh-Hans */,
-				2FD32DA01BA93C1B005F2510 /* zh-Hant */,
+				2F2219091BB92C96003166AB /* zh-Hans */,
+				2F22190A1BB92CC4003166AB /* zh-Hant */,
+				2F22190B1BB92FA4003166AB /* Base */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -448,9 +450,9 @@
 		2FD32D9E1BA93B48005F2510 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2FD32D9D1BA93B48005F2510 /* zh-Hans */,
 				2FD32DA11BA93C1B005F2510 /* zh-Hant */,
 				2F959E891BB20A4600EA9871 /* Base */,
+				2F2219071BB92C05003166AB /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

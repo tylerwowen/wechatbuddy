@@ -1,0 +1,24 @@
+/* Alert messsage */
+"Do you want to download the Pebble App from App Store?" = "Do you want to download the Pebble App from App Store?";
+
+/* Failure text */
+"Failed to send the QR code. Please try again😅" = "Failed to send the QR code. Please try again😅";
+
+/* No */
+"No, thanks" = "No, thanks";
+
+/* Error info when QR code is not found in image */
+"Oops, unable to find a QR code😅" = "Oops, unable to find a QR code😅";
+
+/* Alert title */
+"Pebble App Not Found" = "Pebble App Not Found";
+
+/* Sending text */
+"Sending..." = "Sending...";
+
+/* Success text */
+"Success! Now you can use you Pebble App only😁" = "Success! Now you can use you Pebble App only😁";
+
+/* Yes */
+"Yes" = "Yes";
+

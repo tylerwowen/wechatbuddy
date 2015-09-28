@@ -76,7 +76,7 @@ static void window_load(Window *window) {
   else {
     // Text layer
     text_layer = text_layer_create((GRect) { .origin = { 0, 56 }, .size = { bounds.size.w, 60 } });
-    text_layer_set_text(text_layer, "Please use the iOS application to transfer your QR code");
+    text_layer_set_text(text_layer, "Please use iOS or Android app to transfer your QR code");
     text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
     layer_add_child(window_layer, text_layer_get_layer(text_layer));
 
