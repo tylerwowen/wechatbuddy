@@ -13,7 +13,7 @@ Tyler Ouyang @tylerwowen
 
 ### Contributors
 Jessie Lin [@jessiel](https://github.com/jessiel) (Android app)  
-Kenneth Chen [@cub01d](https://github.com/cub01d) (Android app)
+Kenneth Chan [@cub01d](https://github.com/cub01d) (Android app)
 
 ### How to use
 
