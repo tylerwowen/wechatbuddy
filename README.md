@@ -2,10 +2,9 @@
 
 Show your QR code on your pebble watch.
 
-[![Download on the App Store](http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg)](https://geo.itunes.apple.com/us/app/wechatbuddypb/id1028884430?mt=8)
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png)](https://play.google.com/store/apps/details?id=com.wechatbuddy.wechatbuddy)
-
-[Pebble WatchApp](https://apps.getpebble.com/applications/55c712656b4abe9e19000069)
+[![Download on the App Store][apple]][applelink]
+[![Get it on Google Play][google]][googlelink]
+[Pebble WatchApp][pebble]
 
 ### Author
 
@@ -33,3 +32,10 @@ Kenneth Chan [@cub01d](https://github.com/cub01d) (Android app)
 ### Support or Contact
 
 Contact me via [LinkedIn](https://www.linkedin.com/in/tylerouyang) :]
+
+
+[apple]: https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg
+[applelink]: https://geo.itunes.apple.com/us/app/wechatbuddypb/id1028884430?mt=8
+[google]: https://steverichey.github.io/google-play-badge-svg/img/en_get.svg
+[googlelink]: https://play.google.com/store/apps/details?id=com.wechatbuddy.wechatbuddy
+[pebble]: https://apps.getpebble.com/applications/55c712656b4abe9e19000069
