@@ -3,7 +3,7 @@
 Show your QR code on your pebble watch.
 
 [![Download on the App Store](http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg)](https://geo.itunes.apple.com/us/app/wechatbuddypb/id1028884430?mt=8)
-[![Get it on Google Play](https://developer.android.com/images/brand/en_generic_rgb_wo_45.png)](https://play.google.com/store/apps/details?id=com.wechatbuddy.wechatbuddy)
+[![Get it on Google Play](https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png)](https://play.google.com/store/apps/details?id=com.wechatbuddy.wechatbuddy)
 
 [Pebble WatchApp](https://apps.getpebble.com/applications/55c712656b4abe9e19000069)
 
