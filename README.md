@@ -2,8 +2,9 @@
 
 Show your QR code on your pebble watch.
 
-[![Download on the App Store][apple]][applelink]
-[![Get it on Google Play][google]][googlelink]
+[![Download on the App Store][apple]][applelink]  
+[![Get it on Google Play][google]][googlelink]  
+
 [Pebble WatchApp][pebble]
 
 ### Author
