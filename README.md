@@ -15,6 +15,10 @@ Tyler Ouyang @tylerwowen
 Jessie Lin [@jessiel](https://github.com/jessiel) (Android app)  
 Kenneth Chan [@cub01d](https://github.com/cub01d) (Android app)
 
+### Supported Formats
+* QR code
+* Aztec code (iOS v1.3+, Android v?)
+
 ### How to use
 
 1. Install Android/iOS app 'QRBuddy for Pebble'
