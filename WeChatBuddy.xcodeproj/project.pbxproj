@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F225B821B76B44E0058441D /* GradientBackgroundSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F225B811B76B44E0058441D /* GradientBackgroundSetter.m */; };
+		2F248C881C704CC300AFF969 /* WBMultiFormatWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F248C871C704CC300AFF969 /* WBMultiFormatWriter.m */; };
 		2F43E5FA1B6E0B4800D0A740 /* QRCodeRegenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */; };
 		2F63BFB11B6C7CD6000A7F41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63BFB01B6C7CD6000A7F41 /* main.m */; };
 		2F63BFB41B6C7CD6000A7F41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63BFB31B6C7CD6000A7F41 /* AppDelegate.m */; };
@@ -58,6 +59,8 @@
 		2F22190B1BB92FA4003166AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2F225B801B76B44E0058441D /* GradientBackgroundSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientBackgroundSetter.h; sourceTree = "<group>"; };
 		2F225B811B76B44E0058441D /* GradientBackgroundSetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientBackgroundSetter.m; sourceTree = "<group>"; };
+		2F248C861C704CC300AFF969 /* WBMultiFormatWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMultiFormatWriter.h; sourceTree = "<group>"; };
+		2F248C871C704CC300AFF969 /* WBMultiFormatWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMultiFormatWriter.m; sourceTree = "<group>"; };
 		2F43E5F21B6E07B800D0A740 /* QRCodeRegenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeRegenerator.h; sourceTree = "<group>"; };
 		2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeRegenerator.m; sourceTree = "<group>"; };
 		2F63BFAB1B6C7CD6000A7F41 /* QRBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +159,8 @@
 				2F43E5F91B6E0B4800D0A740 /* QRCodeRegenerator.m */,
 				2FFE7BFB1B6E845D002D7579 /* Resources */,
 				2F63BFAE1B6C7CD6000A7F41 /* Supporting Files */,
+				2F248C861C704CC300AFF969 /* WBMultiFormatWriter.h */,
+				2F248C871C704CC300AFF969 /* WBMultiFormatWriter.m */,
 				2FA32B2A1B93B087000B90AF /* WBQRCodeWriter.h */,
 				2FA32B2B1B93B087000B90AF /* WBQRCodeWriter.m */,
 			);
@@ -283,6 +288,11 @@
 					2F63BFAA1B6C7CD6000A7F41 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = F5S48SAJAU;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					2FD32D761BA929B9005F2510 = {
 						CreatedOnToolsVersion = 7.0;
@@ -435,6 +445,7 @@
 				2FA32B2C1B93B087000B90AF /* WBQRCodeWriter.m in Sources */,
 				2F92F59A1B76857700114F97 /* AboutViewController.swift in Sources */,
 				2F63BFB71B6C7CD6000A7F41 /* MainViewController.m in Sources */,
+				2F248C881C704CC300AFF969 /* WBMultiFormatWriter.m in Sources */,
 				2F63BFB41B6C7CD6000A7F41 /* AppDelegate.m in Sources */,
 				2F225B821B76B44E0058441D /* GradientBackgroundSetter.m in Sources */,
 				2FFE7BFE1B6E98D5002D7579 /* PebbleImageTransmitter.m in Sources */,

@@ -8,13 +8,15 @@
 
 #import "QRCodeRegenerator.h"
 #import "WBQRCodeWriter.h"
+#import "WBMultiFormatWriter.h"
 
-#import <ZXingObjC/ZXingObjCQRCode.h>
+#import <ZXingObjC/ZXingObjC.h>
 
 @interface QRCodeRegenerator ()
 
 @property (nonatomic) UIImage *image;
 @property (nonatomic) NSString *data;
+@property (nonatomic) ZXBarcodeFormat format;
 
 @end
 
@@ -24,7 +26,7 @@
   
   self.image = inputIMG;
   [self decodeOriginalImage];
-  [self encodeQRCode];
+  [self encodeBarcode];
   
   return self.image;
 }
@@ -38,15 +40,20 @@
   
   NSError *error = nil;
   
-  ZXQRCodeReader *reader = [[ZXQRCodeReader alloc] init];
+  ZXDecodeHints *hints = [ZXDecodeHints hints];
+  [hints addPossibleFormat:kBarcodeFormatQRCode];
+  [hints addPossibleFormat:kBarcodeFormatAztec];
+  
+  ZXMultiFormatReader *reader = [ZXMultiFormatReader reader];
   
   ZXResult *result = [reader decode:bitmap
-                              hints:nil
+                              hints:hints
                               error:&error];
   if (result) {
     // The coded result as a string. The raw data can be accessed with
     // result.rawBytes and result.length.
     self.data = result.text;
+    self.format = [result barcodeFormat];
   } else {
     // Use error to determine why we didn't get a result, such as a barcode
     // not being found, an invalid checksum, or a format inconsistency.
@@ -54,7 +61,7 @@
   }
 }
 
-- (void)encodeQRCode {
+- (void)encodeBarcode {
   
   if (!_data) {
     self.image = nil;
@@ -63,9 +70,9 @@
   
   NSError *error = nil;
   
-  WBQRCodeWriter *writer = [[WBQRCodeWriter alloc] init];
+  WBMultiFormatWriter *writer = [[WBMultiFormatWriter alloc] init];
   ZXBitMatrix *result = [writer encode:_data
-                                format:kBarcodeFormatQRCode
+                                format:self.format
                                  width:116
                                 height:116
                                  error:&error];
