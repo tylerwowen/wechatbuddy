@@ -27,7 +27,8 @@ NSString * const WeChatBuddy_UUID_String = @"043fe8a1-70df-403b-a7bb-3338db1fa55
   
   // Set watch property to the object representing the last connected watch
   self.watch = [[PBPebbleCentral defaultCentral] lastConnectedWatch];
-  [self setAppUUID];
+  [[PBPebbleCentral defaultCentral] setAppUUID:[[NSUUID alloc] initWithUUIDString:WeChatBuddy_UUID_String]];
+  [[PBPebbleCentral defaultCentral] run];
   
   return YES;
 }
@@ -39,6 +40,18 @@ NSString * const WeChatBuddy_UUID_String = @"043fe8a1-70df-403b-a7bb-3338db1fa55
 - (void)pebbleCentral:(PBPebbleCentral*)central watchDidConnect:(PBWatch*)watch isNew:(BOOL)isNew {
   NSLog(@"Pebble connected: %@", [watch name]);
   self.watch = watch;
+  
+  if ([[PBPebbleCentral defaultCentral] isMobileAppInstalled]) {
+    [self.watch appMessagesLaunch:^(PBWatch *watch, NSError *error) {
+      if (!error) {
+        NSLog(@"Successfully launched app.");
+      }
+      else {
+        NSLog(@"Error launching app - Error: %@", error);
+      }
+    }
+     ];
+  }
 }
 
 - (void)pebbleCentral:(PBPebbleCentral*)central watchDidDisconnect:(PBWatch*)watch {
@@ -47,15 +60,6 @@ NSString * const WeChatBuddy_UUID_String = @"043fe8a1-70df-403b-a7bb-3338db1fa55
   if (self.watch == watch || [watch isEqual:self.watch]) {
     self.watch = nil;
   }
-}
-
-- (void)setAppUUID {
-  
-  uuid_t AppUUIDbytes;
-  NSUUID *AppUUID = [[NSUUID alloc] initWithUUIDString:WeChatBuddy_UUID_String];
-  [AppUUID getUUIDBytes:AppUUIDbytes];
-  
-  [[PBPebbleCentral defaultCentral] setAppUUID:[NSData dataWithBytes:AppUUIDbytes length:16]];
 }
 
 @end

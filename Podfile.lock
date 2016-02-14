@@ -1,6 +1,6 @@
 PODS:
-  - OCMock (3.1.5)
-  - PebbleKit (2.4)
+  - OCMock (3.2.2)
+  - PebbleKit (3.1.1)
   - ZXingObjC (3.1.0):
     - ZXingObjC/All (= 3.1.0)
   - ZXingObjC/All (3.1.0)
@@ -11,8 +11,8 @@ DEPENDENCIES:
   - ZXingObjC (~> 3.0)
 
 SPEC CHECKSUMS:
-  OCMock: 4c2925291f80407c3738dd1db14d21d0cc278864
-  PebbleKit: e8650801927bd7272da83c8a21fb94d2af24465b
+  OCMock: 18c9b7e67d4c2770e95bb77a9cc1ae0c91fe3835
+  PebbleKit: 390181163256815738e467f183e7c65e16b56d25
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

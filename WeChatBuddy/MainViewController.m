@@ -52,22 +52,6 @@ NSString * const PebbleAppStoreLink = @"itms-apps://geo.itunes.apple.com/us/app/
   
   // Progress
   self.percentage = 0;
-  
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-  [super viewWillAppear:YES];
-  if ([[PBPebbleCentral defaultCentral] isMobileAppInstalled]) {
-    [self.watch appMessagesLaunch:^(PBWatch *watch, NSError *error) {
-      if (!error) {
-        NSLog(@"Successfully launched app.");
-      }
-      else {
-        NSLog(@"Error launching app - Error: %@", error);
-      }
-    }
-     ];
-  }
 }
 
 - (IBAction)showImagePickerForCamera:(id)sender {

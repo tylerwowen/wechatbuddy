@@ -1,0 +1,6 @@
+framework module Pods_QRBuddy {
+  umbrella header "Pods-QRBuddy-umbrella.h"
+
+  export *
+  module * { export * }
+}
