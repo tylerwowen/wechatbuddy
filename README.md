@@ -9,7 +9,7 @@ Show your QR code on your pebble watch.
 
 ### Author
 
-Tyler Ouyang @tylerwowen
+Tyler Ouyang [@tylerwowen](https://github.com/tylerwowen)
 
 ### Contributors
 Jessie Lin [@jessiel](https://github.com/jessiel) (Android app)  
